@@ -10,7 +10,7 @@ export default function Juice() {
         <section className="juice-section">
             <div className="section-text">yummy</div>
             <div className="pattern-layer" style={{ backgroundImage: 'url(assets/images/background/1.png)' }} ></div>
-            <div className="pattern-layer-two" style={{ backgroundImage: 'url(assets/images/resource/juice-glass.png)' }} ></div>
+            {/* <div className="pattern-layer-two" style={{ backgroundImage: 'url(assets/images/resource/juice-glass.png)' }} ></div> */}
             <div className="auto-container">
                 <div className="row clearfix">
                 

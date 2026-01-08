@@ -17,11 +17,11 @@ export default function Home() {
         <>
             <Layout headerStyle={1} footerStyle={1}>
                 <Banner />
-                <Pressmanspromise />
                 <Juice/>
                 <Beverage/>
-                <Deal/>
+                <Pressmanspromise />
                 <Recipe/>
+                <Deal/>
                 <Fluid/>
                 <Testimonial />
                 <Blog />

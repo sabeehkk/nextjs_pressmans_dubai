@@ -66,8 +66,6 @@ export default function Header1({ scroll, handlePopup, handleMobileMenu, handleS
         </div>
         {/*End Header Upper*/}
 		<MobileMenu handleMobileMenu={handleMobileMenu} />
-        
-		
 	
     </header>
     {/* End Main Header */}

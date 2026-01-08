@@ -3,33 +3,132 @@ import Link from "next/link"
 import { useState } from "react"
 import { MessageCircle } from "lucide-react"
 import "../home1/pressman.css"
+
+// Define brand font - replace with your actual font from guidelines
+const brandFont = "'Roboto Slab', serif" // Change to your actual brand font
+
 export default function Fluid() {
    
     return (
         <>
- 
+            <style jsx global>{`
+                /* Force override font styles for this section */
+                .fluid-section-one .content-column .inner-column .sec-title h5,
+                .fluid-section-one .content-column .inner-column .sec-title h2,
+                .fluid-section-one .content-column .inner-column .sec-title ul,
+                .fluid-section-one .content-column .inner-column .sec-title ul li,
+                .fluid-section-one .content-column .inner-column .button-box .theme-btn {
+                    font-family: ${brandFont} !important;
+                }
+            `}</style>
+
             <section className="fluid-section-one">
-                <div className="outer-container clearfix">
+                <div className="outer-container clearfix" style={{ fontFamily: `${brandFont} !important` }}>
                     
                     <div className="content-column">
-                        <div className="icon-box" style={{ backgroundImage: 'url(assets/images/icons/icon-4.png)' }} ></div>
                         <div className="inner-column">
                             
                             <div className="sec-title">
-                                <h2>Upcoming Our <br/> Beverage</h2>
+                                <h5 style={{ fontFamily: `${brandFont} !important`, fontWeight: '600 !important', letterSpacing: '1px !important' }}>
+                                    At Pressman's
+                                </h5>
+                                <h2 style={{ 
+                                    fontFamily: `${brandFont} !important`, 
+                                    fontWeight: '800 !important',
+                                    fontSize: '2.5rem !important',
+                                    lineHeight: '1.2 !important',
+                                    letterSpacing: '-0.5px !important',
+                                    marginBottom: '20px !important'
+                                }}>
+                                    IT'S ALL ABOUT <br/> THE BREAD
+                                </h2>
                                 <div className="separate"></div>
-                                <div className="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+                                <ul style={{ fontFamily: `${brandFont} !important`, marginTop: '30px !important' }}>
+                                    <li style={{ 
+                                        fontFamily: `${brandFont} !important`,
+                                        fontWeight: '500 !important',
+                                        marginBottom: '12px !important',
+                                        fontSize: '1.1rem !important'
+                                    }}>
+                                        We bake our signature breads in-house daily.
+                                    </li>
+                                    <li style={{ 
+                                        fontFamily: `${brandFont} !important`,
+                                        fontWeight: '500 !important',
+                                        marginBottom: '12px !important',
+                                        fontSize: '1.1rem !important'
+                                    }}>
+                                        Our breads are without any added preservatives or artificial conditioners.
+                                    </li>
+                                    <li style={{ 
+                                        fontFamily: `${brandFont} !important`,
+                                        fontWeight: '500 !important',
+                                        marginBottom: '12px !important',
+                                        fontSize: '1.1rem !important'
+                                    }}>
+                                        Our breads DO NOT contain butter, dairy or egg.
+                                    </li>
+                                    <li style={{ 
+                                        fontFamily: `${brandFont} !important`,
+                                        fontWeight: '500 !important',
+                                        marginBottom: '12px !important',
+                                        fontSize: '1.1rem !important'
+                                    }}>
+                                        Our breads come in 4 flavors viz. Multi Cereal, Whole Wheat, Omega and Country White.
+                                    </li>
+                                    <li style={{ 
+                                        fontFamily: `${brandFont} !important`,
+                                        fontWeight: '500 !important',
+                                        marginBottom: '12px !important',
+                                        fontSize: '1.1rem !important'
+                                    }}>
+                                        Our sandwiches are light on stomach and crunchy on the outside.
+                                    </li>
+                                </ul>
                             </div>
                             
-                            <div className="button-box">
-                                <Link href="menu" className="theme-btn btn-style-two clearfix"><span className="icon"></span>All Product</Link>
+                            <div className="flex gap-4 mt-8" style={{ fontFamily: `${brandFont} !important` }}>
+                                <button 
+                                    className="!px-8 !py-3 !rounded-3xl !bg-yellow-400 hover:!bg-yellow-500 !text-black !font-bold !text-lg !transition-all !duration-300"
+                                    style={{ 
+                                        fontFamily: `${brandFont} !important`,
+                                        fontWeight: '700 !important'
+                                    }}
+                                >
+                                    Read More
+                                </button>
+                                
+                                <div className="button-box">
+                                    <Link 
+                                        href="menu" 
+                                        className="theme-btn btn-style-two clearfix !px-8 !py-3 !rounded-3xl"
+                                        style={{ fontFamily: `${brandFont} !important` }}
+                                    >
+                                        <span className="icon"></span>All Products
+                                    </Link>
+                                </div>
                             </div>
                         </div>
                     </div>
                     
-                    
-                    <div className="image-column" style={{ backgroundImage: 'url(assets/images/resource/image-1.jpg)' }} >
-                        <figure className="image-box"><img src="assets/images/resource/image-1.jpg" alt=""/></figure>
+                    <div className="image-column">
+                        <video 
+                            src="https://ik.imagekit.io/1zc1fh32oo/Pressman_s__1__DmJBQXmG3.mp4?ik-sdk-version=javascript-1.4.3&updatedAt=1664172403349" 
+                            autoPlay
+                            muted
+                            loop
+                            playsInline
+                            controls
+                            style={{
+                                width: '100% !important',
+                                height: '500px !important',
+                                objectFit: 'cover !important',
+                                borderRadius: '20px !important',
+                                boxShadow: '0 20px 40px rgba(0,0,0,0.15) !important',
+                                maxWidth: '600px !important',
+                                border: '8px solid white !important'
+                            }}
+                        />
                     </div>
                     
                 </div>
@@ -37,3 +136,50 @@ export default function Fluid() {
         </>
     )
 }
+
+// 'use client'
+// import Link from "next/link"
+// import { useState } from "react"
+// import { MessageCircle } from "lucide-react"
+// import "../home1/pressman.css"
+// export default function Fluid() {
+   
+//     return (
+//         <>
+ 
+//             <section className="fluid-section-one">
+//                 <div className="outer-container clearfix">
+                    
+//                     <div className="content-column">
+//                         <div className="inner-column">
+                            
+//                             <div className="sec-title">
+//                                 <h5>At Pressman’s</h5>
+//                                 <h2>IT'S ALL ABOUT <br/> THE BREAD</h2>
+//                                 <div className="separate"></div>
+//                                 <ul>
+//                                     <li>We bake our signature breads in-house daily.</li>
+//                                     <li>Our breads are without any added preservatives or artificial conditioners.</li>
+//                                     <li>Our breads DO NOT contain butter, dairy or egg.</li>
+//                                     <li>Our breads come in 4 flavors viz. Multi Cereal, Whole Wheat, Omega and Country White.</li>
+//                                     <li>Our sandwiches are light on stomach and crunchy on the outside.</li>
+//                                 </ul>
+                                
+//                                 {/* <div className="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div> */}
+//                             </div>
+//                                <button className="rounded-3xl !bg-yellow-400">Read more </button>
+//                             <div className="button-box">
+//                                 <Link href="menu" className="theme-btn btn-style-two clearfix"><span className="icon"></span>All Product</Link>
+//                             </div>
+//                         </div>
+//                     </div>
+                    
+//                     <div className="image-column"  >
+//                     <video src="https://ik.imagekit.io/1zc1fh32oo/Pressman_s__1__DmJBQXmG3.mp4?ik-sdk-version=javascript-1.4.3&updatedAt=1664172403349" alt=""/>
+//                     </div>
+                    
+//                 </div>
+//             </section>
+//         </>
+//     )
+// }

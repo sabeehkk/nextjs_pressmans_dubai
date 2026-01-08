@@ -47,7 +47,7 @@ const Test =()=>{
       ];
     
       return (
-        <div className="min-h-screen bg-gradient-to-br from-amber-200 via-yellow-300 to-yellow-300 !pb-6">
+        <div className="min-h-screen bg-gradient-to-br  !pb-6" style={{ backgroundImage: 'url(assets/slider/about-bg-gray.webp)' }}>
           <div className="container mx-auto px-4 py-12 md:py-20">
             <div className="text-center mb-16 md:mb-20">
               <div className="flex justify-center mb-8">
@@ -70,7 +70,7 @@ const Test =()=>{
                 </div>
               </div>
     
-              <h1 className="text-1xl md:!text-1xl lg:!text-6xl !pt-14 font-bold text-amber-900 mb-6 tracking-tight">
+              <h1 className="text-1xl md:!text-sm lg:!text-3xl !pt-14 !font-extrabold text-amber-900 mb-6 tracking-tight">
                 PRESSMAN'S PROMISE
               </h1>
               <p className="text-xl md:text-2xl text-amber-800 font-medium max-w-4xl mx-auto">
@@ -78,11 +78,11 @@ const Test =()=>{
               </p>
             </div>
     
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 mb-16 md:mb-24">
+            <div className="grid  grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 mb-16 md:mb-24">
               {features.map((feature, index) => (
                 <div
                   key={index}
-                  className="bg-white !p-8 rounded-2xl  shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border-2 border-amber-900"
+                  className="bg-white  !p-8 rounded-2xl  shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 !border-2 !border-amber-900"
                 >
                   <div className="text-amber-600 mb-6 flex justify-center">
                     {feature.icon}
@@ -97,7 +97,7 @@ const Test =()=>{
               ))}
             </div>
     
-            <div className="bg-white rounded-3xl shadow-2xl !p-8 md:!p-12 !mt-4 ">
+            <div className="bg-white rounded-3xl !shadow-2xl !p-8 md:!p-12 !mt-4 ">
               <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12">
                 {stats.map((stat, index) => (
                   <div key={index} className="text-center">
