@@ -32,7 +32,7 @@ export default function Fluid() {
                                 <h5 style={{ fontFamily: `${brandFont} !important`, fontWeight: '600 !important', letterSpacing: '1px !important' }}>
                                     At Pressman's
                                 </h5>
-                                <h2 style={{ 
+                                <h3 style={{ 
                                     fontFamily: `${brandFont} !important`, 
                                     fontWeight: '800 !important',
                                     fontSize: '2.5rem !important',
@@ -41,7 +41,7 @@ export default function Fluid() {
                                     marginBottom: '20px !important'
                                 }}>
                                     IT'S ALL ABOUT <br/> THE BREAD
-                                </h2>
+                                </h3>
                                 <div className="separate"></div>
                                 <ul style={{ fontFamily: `${brandFont} !important`, marginTop: '30px !important' }}>
                                     <li style={{ 
@@ -120,12 +120,13 @@ export default function Fluid() {
                             playsInline
                             controls
                             style={{
+                                marginTop:'90px',
                                 width: '100% !important',
-                                height: '500px !important',
+                                height: '567px !important',
                                 objectFit: 'cover !important',
                                 borderRadius: '20px !important',
                                 boxShadow: '0 20px 40px rgba(0,0,0,0.15) !important',
-                                maxWidth: '600px !important',
+                                maxWidth: '748px  !important',
                                 border: '8px solid white !important'
                             }}
                         />
