@@ -9,7 +9,8 @@ import Beverage from "@/components/sections/home1/Beverage"
 import Deal from "@/components/sections/home1/Deal"
 import Recipe from "@/components/sections/home1/Recipe"
 import Fluid from "@/components/sections/home1/Fluid"
-import Pressmanspromise from "../components/sections/pressmanspromise/test"
+import Pressmanspromise from "../components/sections/pressmanspromise/test";
+import Restaruentvideo from "@/components/sections/restaurentvideo/Restaurentvideo";
 
 export default function Home() {
 
@@ -23,6 +24,7 @@ export default function Home() {
                 <Recipe/>
                 <Deal/>
                 <Fluid/>
+                {/* <Restaruentvideo /> */}
                 <Testimonial />
                 <Blog />
                 <Gallery />

@@ -1593,7 +1593,7 @@
 .fluid-section-one .outer-container{
 	position:relative;
 	min-height:250px;
-	background-color:#f7eee2;
+	/* background-color:#f7eee2; */
 }
 
 .fluid-section-one .image-column{
@@ -1642,7 +1642,7 @@
 }
 
 .fluid-section-one .content-column:before{
-	position:absolute;
+	/* position:absolute; */
 	content:'';
 	left:100%;
 	top:0px;

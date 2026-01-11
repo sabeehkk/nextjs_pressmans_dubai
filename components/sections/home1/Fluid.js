@@ -22,15 +22,34 @@ export default function Fluid() {
                 }
             `}</style>
 
-            <section className="fluid-section-one">
+            {/* <section className="fluid-section-one bg-red-500 " style={{ backgroundImage: 'url(assets/slider/about-bg-gray.webp)' }}> */}
+             <section
+  className="fluid-section-one  min-h-screen"
+  style={{
+    backgroundImage: "url('https://pressmans.com/wp-content/uploads/2023/06/feedback-bg.jpg')",
+    backgroundSize: "cover",
+    backgroundRepeat: "no-repeat",
+    backgroundPosition: "center",
+  }}
+>
                 <div className="outer-container clearfix" style={{ fontFamily: `${brandFont} !important` }}>
                     
                     <div className="content-column">
                         <div className="inner-column">
                             
                             <div className="sec-title">
-                                <h5 style={{ fontFamily: `${brandFont} !important`, fontWeight: '600 !important', letterSpacing: '1px !important' }}>
-                                    At Pressman's
+                                <h2>
+                        <span style={{ color: "white" }}>At Pressman's  </span>
+                        </h2>
+                        <br/>
+                        <h5>
+                        <span style={{ color: "#F5E400" }}>IT'S ALL ABOUT <br/> THE BREAD  </span>
+                        </h5>
+                            
+                       
+                       
+                                {/* <h5 style={{ fontFamily: `${brandFont} !important`, fontWeight: '600 !important', letterSpacing: '1px !important' }}>
+                                    At Pressman's  
                                 </h5>
                                 <h3 style={{ 
                                     fontFamily: `${brandFont} !important`, 
@@ -40,10 +59,10 @@ export default function Fluid() {
                                     letterSpacing: '-0.5px !important',
                                     marginBottom: '20px !important'
                                 }}>
-                                    IT'S ALL ABOUT <br/> THE BREAD
-                                </h3>
+                                    IT'S ALL ABOUT <br/> THE BREAD  
+                                </h3> */}
                                 <div className="separate"></div>
-                                <ul style={{ fontFamily: `${brandFont} !important`, marginTop: '30px !important' }}>
+                                <ul className="text-white" style={{ fontFamily: `${brandFont} !important`, marginTop: '30px !important' }}>
                                     <li style={{ 
                                         fontFamily: `${brandFont} !important`,
                                         fontWeight: '500 !important',
@@ -99,13 +118,13 @@ export default function Fluid() {
                                 </button>
                                 
                                 <div className="button-box">
-                                    <Link 
+                                    {/* <Link 
                                         href="menu" 
                                         className="theme-btn btn-style-two clearfix !px-8 !py-3 !rounded-3xl"
                                         style={{ fontFamily: `${brandFont} !important` }}
                                     >
                                         <span className="icon"></span>All Products
-                                    </Link>
+                                    </Link> */}
                                 </div>
                             </div>
                         </div>
