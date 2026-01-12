@@ -456,7 +456,7 @@ export default function Banner() {
                             <div className="image-column col-lg-6 col-md-12 col-sm-12">
                                 <div className="inner-column">
                                     <div className="image">
-                                        <img src="https://mcdindia.com/wp-content/uploads/2023/01/veg-surprise-burger-1.png" alt="" />
+                                        <img src="assets/slider/beverages_banner.png" alt="" />
                                     </div>
                                 </div>
                             </div>
@@ -513,13 +513,24 @@ export default function Banner() {
                             </div>
                             
                             {/* Image Column */}
-                            <div className="image-column col-lg-6 col-md-12 col-sm-12">
+                            {/* <div className="image-column col-lg-6 col-md-12 col-sm-12">
                                 <div className="inner-column">
                                     <div className="icon-layer-three" style={{ backgroundImage: 'url(assets/images/main-slider/icon-3.png)' }}></div>
                                     <div className="image">
-                                        <img src="https://mcdindia.com/wp-content/uploads/2023/01/veg-surprise-burger-1.png" alt="" />
+                                        <img src="assets/slider/Arabian_Salad_.png" alt="" />
                                     </div>
                                 </div>
+                            </div> */}
+                            <div className="image-column col-lg-6 col-md-12 col-sm-12">
+                            <div className="inner-column flex justify-center">
+                                <div className="!w-[420px] !h-[420px] rounded-full overflow-hidden">
+                                <img
+                                    src="assets/slider/Arabian_Salad_.png"
+                                    alt="Arabian Salad"
+                                    className="w-full h-full object-cover"
+                                />
+                                </div>
+                            </div>
                             </div>
                             
                         </div>
