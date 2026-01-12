@@ -29,7 +29,6 @@ export default function Home() {
                 <Blog />
                 <Gallery />
             </Layout>
-
         </>
     )
 }

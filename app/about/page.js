@@ -28,9 +28,6 @@ const swiperOptions = {
         el: '.swiper-pagination',
         clickable: true,
     },
-
-
-
 }
 
 

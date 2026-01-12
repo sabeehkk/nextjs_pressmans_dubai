@@ -10,8 +10,8 @@ export default function Beverage() {
                 <div className="auto-container">
                     {/* Sec Title */}
                     <div className="sec-title centered">
-                        <div className="title">Best for You</div>
-                        <h2>Best Delivered Categories</h2>
+                        <div className="title !text-[#441b10]">Best for You</div>
+                        <h2 className="!text-[#441b10]">Best Delivered Categories</h2>
                         <div className="separate"></div>
                     </div>
                     <div className="row clearfix">

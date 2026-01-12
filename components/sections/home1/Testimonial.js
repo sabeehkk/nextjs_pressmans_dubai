@@ -2,6 +2,7 @@
 import Link from "next/link"
 import { Autoplay, Navigation, Pagination } from "swiper/modules"
 import { Swiper, SwiperSlide } from "swiper/react"
+import GallerySlider1 from '@/components/slider/GallerySlider1'
 
 
 const swiperOptions = {
@@ -120,6 +121,13 @@ export default function Testimonial() {
                 </div>
             </section>
             {/* End Testimonial Section */}
+               {/* Gallery Section */}
+                            <section className="gallery-section">
+                                <div className="outer-container">
+                                    <GallerySlider1/> 
+                                </div>
+                            </section>
+                            {/* End Gallery Section */}
             
         </>
     )

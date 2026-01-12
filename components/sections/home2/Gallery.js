@@ -14,7 +14,7 @@ export default function Gallery() {
                         <div className="gallery-block-two masonry-item">
                             <div className="inner-box">
                                 <div className="image-box">
-                                    <img src="assets/images/gallery/7.jpg" alt="" />
+                                    <img src="assets/slider/bannerimg.jpg" alt="" />
                                     <div className="overlay-box">
                                         <h6><Link href="gallery">Cornish cod fillet</Link></h6>
                                         <div className="title">Us percipit urbanitas referrentur ea.</div>
