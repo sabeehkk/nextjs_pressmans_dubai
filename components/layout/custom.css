@@ -1,0 +1,5 @@
+.custom-link {
+  font-family: var(--font-primary) !important;
+  font-weight: 600 !important;
+  color: rgb(70, 25, 25) !important;
+}

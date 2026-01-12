@@ -6,12 +6,21 @@ export default function Beverage() {
 
             {/* Beverage Section */}
             <section className="beverage-section">
-                <div className="icon-layer" style={{ backgroundImage: 'url(assets/slider/bannerimg.jpg)' }} ></div>
+                {/* <div className="icon-layer" style={{ backgroundImage: 'url(assets/slider/bannerimg.jpg)' }} ></div> */}
+               <div 
+  className="icon-layer" 
+  style={{ 
+    backgroundImage: 'url(assets/slider/bannerimg.jpg)',
+    backgroundSize: 'cover', // or 'contain' depending on your needs
+    backgroundPosition: 'center',
+    backgroundRepeat: 'no-repeat'
+  }} 
+></div>
                 <div className="auto-container">
                     {/* Sec Title */}
                     <div className="sec-title centered">
-                        <div className="title">Best for You</div>
-                        <h2>Best Delivered Categories</h2>
+                        <div className="title !text-[#582414]">Best for You</div>
+                        <h2 className="!text-[#582414]">Best Delivered Categories</h2>
                         <div className="separate"></div>
                     </div>
                     <div className="row clearfix">

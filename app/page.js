@@ -25,9 +25,9 @@ export default function Home() {
                 <Deal/>
                 <Fluid/>
                 {/* <Restaruentvideo /> */}
-                <Testimonial />
-                <Blog />
-                <Gallery />
+                {/* <Testimonial /> */}
+                {/* <Blog /> */}
+                {/* <Gallery /> */}
             </Layout>
 
         </>

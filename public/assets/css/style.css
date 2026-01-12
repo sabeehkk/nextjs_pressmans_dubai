@@ -245,7 +245,10 @@
 	overflow:hidden;
 	padding-top:150px;
 	padding-bottom:0px;
-	background-color:#beb996;
+	/* background-color:#beb996; */
+	background:url(../slider/about-bg-gray.webp);
+	/* assets/slider/about-bg-gray.webp */
+
 }
 
 .banner-section .slide.style-two{
