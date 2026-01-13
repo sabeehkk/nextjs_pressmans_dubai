@@ -245,14 +245,20 @@
 	overflow:hidden;
 	padding-top:150px;
 	padding-bottom:0px;
-	/* background-color:#beb996; */
-	background:url(../slider/about-bg-gray.webp);
+	background-color:#f6f1cc;
+	/* background:url(../slider/about-bg-gray.webp); */
 	/* assets/slider/about-bg-gray.webp */
-
 }
 
 .banner-section .slide.style-two{
 	background-color:#a79bac;
+
+}
+.banner-section .slide.style-three{
+	background-color:#1ba524;
+}
+.banner-section .slide.style-six{
+	background-color:#733d58;
 }
 
 .banner-section .icon-layer-one{
