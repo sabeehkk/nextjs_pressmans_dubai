@@ -1,0 +1,12 @@
+/* .custom-link {
+  font-family: var(--font-primary) !important;
+  font-weight: 600 !important;
+  color: rgb(70, 25, 25) !important;
+} */
+
+.custom-link {
+  font-family: var(--font-primary) !important;
+  font-weight: 600 !important;
+  color: var(--custom-link-color, rgb(70, 25, 25)) !important;
+  transition: color 0.3s ease;
+}

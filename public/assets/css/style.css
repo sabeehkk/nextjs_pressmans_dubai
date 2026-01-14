@@ -245,11 +245,20 @@
 	overflow:hidden;
 	padding-top:150px;
 	padding-bottom:0px;
-	background-color:#beb996;
+	background-color:#f6f1cc;
+	/* background:url(../slider/about-bg-gray.webp); */
+	/* assets/slider/about-bg-gray.webp */
 }
 
 .banner-section .slide.style-two{
 	background-color:#a79bac;
+
+}
+.banner-section .slide.style-three{
+	background-color:#1ba524;
+}
+.banner-section .slide.style-six{
+	background-color:#733d58;
 }
 
 .banner-section .icon-layer-one{
@@ -1409,7 +1418,7 @@
 .recipe-section{
 	position:relative;
 	overflow:hidden;
-	padding:100px 0px 130px;
+	padding:100px 0px 50px;
 }
 
 .recipe-section .icon-layer-one{
@@ -1593,7 +1602,7 @@
 .fluid-section-one .outer-container{
 	position:relative;
 	min-height:250px;
-	background-color:#f7eee2;
+	/* background-color:#f7eee2; */
 }
 
 .fluid-section-one .image-column{
@@ -1642,7 +1651,7 @@
 }
 
 .fluid-section-one .content-column:before{
-	position:absolute;
+	/* position:absolute; */
 	content:'';
 	left:100%;
 	top:0px;

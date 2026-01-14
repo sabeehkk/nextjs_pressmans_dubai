@@ -9,7 +9,8 @@ import Beverage from "@/components/sections/home1/Beverage"
 import Deal from "@/components/sections/home1/Deal"
 import Recipe from "@/components/sections/home1/Recipe"
 import Fluid from "@/components/sections/home1/Fluid"
-import Pressmanspromise from "../components/sections/pressmanspromise/test"
+import Pressmanspromise from "../components/sections/pressmanspromise/test";
+import Restaruentvideo from "@/components/sections/restaurentvideo/Restaurentvideo";
 
 export default function Home() {
 
@@ -17,15 +18,16 @@ export default function Home() {
         <>
             <Layout headerStyle={1} footerStyle={1}>
                 <Banner />
-                <Pressmanspromise />
                 <Juice/>
                 <Beverage/>
-                <Deal/>
+                <Pressmanspromise />
                 <Recipe/>
+                <Deal/>
                 <Fluid/>
-                <Testimonial />
-                <Blog />
-                <Gallery />
+                {/* <Restaruentvideo /> */}
+                {/* <Testimonial /> */}
+                {/* <Blog /> */}
+                {/* <Gallery /> */}
             </Layout>
 
         </>

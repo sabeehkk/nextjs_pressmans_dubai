@@ -123,7 +123,7 @@
 	float:left;
 	top:3px;
 	font-size:24px;
-	color:#ffffff;
+	  color: rgb(70, 25, 25) !important;
 	cursor:pointer;
 	margin-left:35px;
 }
@@ -251,7 +251,7 @@
 }
 
 .main-menu .navigation > li:before{
-	position:absolute;
+	/* position:absolute; */
 	content:'';
 	left:0px;
 	bottom:0px;
