@@ -1,14 +1,16 @@
-import "@/node_modules/react-modal-video/css/modal-video.css"
-import "./globals.css"
+// Legacy CSS imports (loaded first)
 import "public/assets/css/style.css"
 import "public/assets/css/responsive.css"
 
-
-
-import 'swiper/css'
-import "swiper/css/navigation"
-import "swiper/css/pagination"
+// Third-party component styles
+import "@/node_modules/react-modal-video/css/modal-video.css"
+import 'swiper/css';
+import "swiper/css/navigation";
+import "swiper/css/pagination";
 import 'swiper/css/free-mode';
+
+// Tailwind CSS (loaded last to override legacy styles)
+import "./globals.css"
 // import {niconne, poppins, tangerine} from '@/lib/font'
 import { rockwell } from "@/lib/font";
 export const metadata = {

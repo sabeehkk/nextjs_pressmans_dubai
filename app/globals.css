@@ -1,18 +1,17 @@
 @import "tailwindcss";
 
-/* Headings */
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-.sec-title .title {
-  font-family: var(--font-primary) !important;
+/* Resolve specificity: Tailwind scope */
+#__next {
+  /* Typography overrides for Tailwind compatibility */
+}
+
+/* Only override if not already styled by Tailwind */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-primary);
   font-weight: 700;
   text-transform: uppercase;
 }
-/* Body text */
+
 p, span {
   font-family: var(--font-primary);
   font-weight: 400;

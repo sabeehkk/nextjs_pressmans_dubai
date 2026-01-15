@@ -1,6 +1,10 @@
-// PostCSS config for Tailwind v4 (Next expects CommonJS here).
 module.exports = {
   plugins: {
-    '@tailwindcss/postcss': {},
+    '@tailwindcss/postcss': {
+      // Ensure Tailwind has proper layer structure
+      base: {},
+      components: {},
+      utilities: {},
+    },
   },
 };
