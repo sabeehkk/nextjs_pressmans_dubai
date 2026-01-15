@@ -206,6 +206,7 @@
 }
 
 .fixed-header .sticky-header{
+	background: #ffffff;
 	z-index:999;
 	opacity:1;
 	visibility:visible;
@@ -229,6 +230,20 @@
 	-op-animation-iteration-count: 1;
 	-webkit-animation-iteration-count: 1;
 	animation-iteration-count: 1;	
+}
+/* FORCE nav link color inside sticky header */
+.fixed-header .sticky-header .main-menu .custom-link {
+    color: #000000 !important;
+}
+
+/* Optional: hover color */
+.fixed-header .sticky-header .main-menu .custom-link:hover {
+    color: #000000 !important;
+}
+
+/* Icons color */
+.fixed-header .sticky-header .icon {
+    color: #000000 !important;
 }
 
 .main-menu .navigation > li > a{

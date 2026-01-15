@@ -1,5 +1,5 @@
 
-// 'use client'
+// 'use client';
 // import Link from "next/link"
 // import { Autoplay, Navigation, Pagination } from "swiper/modules"
 // import { Swiper, SwiperSlide } from "swiper/react"
@@ -8,62 +8,92 @@
 //     modules: [Autoplay, Pagination, Navigation],
 //     slidesPerView: 1,
 //     spaceBetween: 0,
-//     // autoplay: {
-//     //     delay: 2500,
-//     //     disableOnInteraction: false,
-//     // },
+//     autoplay: {
+//         delay: 6000,
+//         disableOnInteraction: false,
+//     },
 //     loop: true,
-
-//     // Navigation
 //     navigation: {
 //         nextEl: '.h1n',
 //         prevEl: '.h1p',
 //     },
-
-//     // Pagination
 //     pagination: {
 //         el: '.swiper-pagination',
 //         clickable: true,
 //     },
 // }
 
+// // Define your font family - replace with actual font from the image
+// const brandFont = "Montserrat', sans-serif" // Example font
+
 // export default function Banner() {
 //     return (
 //         <>
-
+//         <style jsx global>{`
+//             /* Force override font family for banner headings */
+//             .banner-section .main-slider-carousel .slide .inner-column h1,
+//             .banner-section .main-slider-carousel .slide .inner-column h1 span {
+//                 font-family: ${brandFont} !important;
+//             }
+            
+//             .banner-section .main-slider-carousel .slide .inner-column .text {
+//                 font-family: ${brandFont} !important;
+//             }
+//         `}</style>
+        
 //         {/* Banner Section */}
-//         <section className="banner-section bg-amber-500">
-//             <div className="pattern-layer" style={{ backgroundImage: 'url(assets/images/main-slider/pattern-1.png)' }} ></div>
-//             <Swiper {...swiperOptions} className="main-slider-carousel ">
+//         <section className="banner-section">
+//             <div className="pattern-layer" style={{ backgroundImage: 'url(assets/images/main-slider/pattern-1.png)' }}></div>
+//             <Swiper {...swiperOptions} className="main-slider-carousel">
                 
-//                 {/* Slide */}
-//                 <SwiperSlide>
+//                 {/* Slide 1 */}
+//                side1&2  
+
+//  {/* Slide 1 */}
+//                  <SwiperSlide>
 //                 <div className="slide">
-//                     {/* <div className="icon-layer-one" style={{ backgroundImage: 'url(assets/images/main-slider/icon-1.png)' }} ></div> */}
-//                     {/* <div className="icon-layer-two" style={{ backgroundImage: 'url(assets/images/main-slider/icon-2.png)' }} ></div> */}
+//                     <div className="icon-layer-one " style={{ backgroundImage: 'url(assets/images/removed_banner_bg/mulbberiesremovedbg.png)' }}></div>
+//                     <div className="icon-layer-two" style={{ backgroundImage: 'url(assets/images/removed_banner_bg/cherryremovedbg.png)' }}></div>
 //                     <div className="auto-container">
 //                         <div className="row clearfix">
                         
 //                             {/* Content Column */}
 //                             <div className="content-column col-lg-6 col-md-12 col-sm-12">
 //                                 <div className="inner-column">
-//                                     {/* <h1><span className="first-letter">Heathly</span><span className="second-letter">Smoothie</span></h1> */}
-//                                     <h1 className="flex flex-wrap items-center leading-tight">
-//                                 <span className="first-letter text-6xl text-[#582414] mr-2">
-//                                     You don’t have to
-//                                 </span>
+//                                     <h1 
+//                                         className="flex flex-wrap items-center font-bold tracking-tight leading-[1.1]"
+//                                         style={{ fontFamily: `${brandFont} !important` }}
+//                                     >
+                                       
+//                                     <span 
+//                                         className="first-letter text-5xl lg:text-6xl text-[#582414] mr-2"
+//                                         style={{ fontFamily: `${brandFont} !important` }}
+//                                     >
+//                                        People who love
+//                                     </span>
 
-//                                 <span className="second-letter text-6xl text-[#582414] mr-2">
-//                                     Eat Less,
-//                                 </span>
+//                                     <span 
+//                                         className="second-letter text-5xl lg:text-6xl text-[#582414] mr-2 font-bold"
+//                                         style={{ fontFamily: `${brandFont} !important` }}
+//                                     >
+//                                        to eat are always
+//                                     </span>
 
-//                                 <span className="second-letter text-6xl text-[#582414]">
-//                                     You just need to Eat Right
-//                                 </span>
-//                                 </h1>
-//                                     <div className="text !text-amber-700">Consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</div>
-//                                     <div className="btns-box">
-//                                         <Link href="menu" className="theme-btn btn-style-one clearfix"><span className="icon"></span>Order Now</Link>
+//                                     <span 
+//                                         className="second-letter text-5xl lg:text-6xl text-[#582414] font-normal"
+//                                         style={{ fontFamily: `${brandFont} !important` }}
+//                                     >
+//                                        the best people
+//                                     </span>
+//                                     </h1>
+//                                     <div 
+//                                         className="text mt-4 text-lg tracking-normal !text-[#582414]  "
+//                                         style={{ fontFamily: `${brandFont} !important` }}
+//                                     >
+//                                         Consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+//                                     </div>
+//                                     <div className="btns-box mt-6">
+//                                         <Link href="menu" className="theme-btn btn-style-one clearfix"><span className="icon"></span>Buy Now</Link>
 //                                     </div>
 //                                     <div className="icons-box">
 //                                         <img src="assets/images/main-slider/icons.png" alt="" />
@@ -74,9 +104,9 @@
 //                             {/* Image Column */}
 //                             <div className="image-column col-lg-6 col-md-12 col-sm-12">
 //                                 <div className="inner-column">
-//                                     {/* <div className="icon-layer-three" style={{ backgroundImage: 'url(assets/images/main-slider/icon-3.png)' }} ></div> */}
-//                                     <div className="image">
-//                                         <img src="https://mcdindia.com/wp-content/uploads/2023/01/veg-surprise-burger-1.png" alt="" />
+//                                     {/* <div className="icon-layer-three" style={{ backgroundImage: 'url(assets/images/main-slider/icon-3.png)' }}></div> */}
+//                                     <div className="image" style={{width:'914px',marginTop:'-213px',marginLeft:'-9rem'}}>
+//                                         <img src="assets/images/removed_banner_bg/beattheheatcopy.png" alt="" />
 //                                     </div>
 //                                 </div>
 //                             </div>
@@ -86,57 +116,52 @@
 //                 </div>
 //                 </SwiperSlide>
 
-//                 {/* Slide */}
-//                 <SwiperSlide>
-//                 <div className="slide">
-//                     <div className="icon-layer-one" style={{ backgroundImage: 'url(assets/images/main-slider/icon-1.png)' }} ></div>
-//                     <div className="icon-layer-two" style={{ backgroundImage: 'url(assets/images/main-slider/icon-6.png)' }} ></div>
-//                     <div className="auto-container">
-//                         <div className="row clearfix">
-                        
-//                             {/* Content Column */}
-//                             <div className="content-column col-lg-6 col-md-12 col-sm-12">
-//                                 <div className="inner-column">
-//                                     <h1><span className="first-letter">Heathly</span><span className="second-letter">Smoothie</span></h1>
-//                                     <div className="text">Consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</div>
-//                                     <div className="btns-box">
-//                                         <Link href="menu" className="theme-btn btn-style-one clearfix"><span className="icon"></span>Order Now</Link>
-//                                     </div>
-//                                     <div className="icons-box">
-//                                         <img src="assets/images/main-slider/icons.png" alt="" />
-//                                     </div>
-//                                 </div>
-//                             </div>
-                            
-//                             {/* Image Column */}
-//                             <div className="image-column col-lg-6 col-md-12 col-sm-12">
-//                                 <div className="inner-column">
-//                                     <div className="icon-layer-three" style={{ backgroundImage: 'url(assets/images/main-slider/icon-3.png)' }} ></div>
-//                                     <div className="image">
-//                                         <img src="assets/images/main-slider/content-image-2.png" alt="" />
-//                                     </div>
-//                                 </div>
-//                             </div>
-                            
-//                         </div>
-//                     </div>
-//                 </div>
-//                 </SwiperSlide>
-//                 {/* Slide */}
+//                 {/* Slide 2 */}
+//                  {/* Slide 3 */}
 //                 <SwiperSlide>
 //                 <div className="slide style-two">
-//                     <div className="icon-layer-one" style={{ backgroundImage: 'url(assets/images/main-slider/icon-1.png)' }} ></div>
-//                     <div className="icon-layer-two" style={{ backgroundImage: 'url(assets/images/main-slider/icon-7.png)' }} ></div>
+//                     <div className="icon-layer-one " style={{ backgroundImage: 'url(assets/images/removed_banner_bg/onion_removedbg.png)' }}></div>
+//                     <div className="icon-layer-two" style={{ backgroundImage: 'url(assets/images/removed_banner_bg/cheeseremovedbg.png)' }}></div>
 //                     <div className="auto-container">
 //                         <div className="row clearfix">
                         
 //                             {/* Content Column */}
 //                             <div className="content-column col-lg-6 col-md-12 col-sm-12">
 //                                 <div className="inner-column">
-//                                     <h1><span className="first-letter">Heathly</span><span className="second-letter">Smoothie</span></h1>
-//                                     <div className="text">Consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</div>
-//                                     <div className="btns-box">
-//                                         <Link href="menu" className="theme-btn btn-style-one clearfix"><span className="icon"></span>Order Now</Link>
+//                                     <h1 
+//                                         className="flex flex-wrap items-center font-bold tracking-tight leading-[1.1]"
+//                                         style={{ fontFamily: `${brandFont} !important` }}
+//                                     >
+                                        
+//                                     <span 
+//                                         className="first-letter text-5xl lg:text-6xl text-[#ffffff] mr-2"
+//                                         style={{ fontFamily: `${brandFont} !important` }}
+//                                     >
+//                                         Extremes are
+//                                     </span>
+
+//                                     <span 
+//                                         className="second-letter text-5xl lg:text-6xl text-[#ffffff] mr-2 font-bold"
+//                                         style={{ fontFamily: `${brandFont} !important` }}
+//                                     >
+//                                       the EASY,
+//                                     </span>
+
+//                                     <span 
+//                                         className="second-letter text-5xl lg:text-6xl text-[#ffffff] font-normal"
+//                                         style={{ fontFamily: `${brandFont} !important` }}
+//                                     >
+//                                        Strive for BALANCE
+//                                     </span>
+//                                     </h1>
+//                                     <div 
+//                                         className="text mt-4 text-lg tracking-normal"
+//                                         style={{ fontFamily: `${brandFont} !important` }}
+//                                     >
+//                                         Consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+//                                     </div>
+//                                     <div className="btns-box mt-6">
+//                                         <Link href="menu" className="theme-btn btn-style-one clearfix"><span className="icon"></span>Buy Now</Link>
 //                                     </div>
 //                                     <div className="icons-box">
 //                                         <img src="assets/images/main-slider/icons.png" alt="" />
@@ -147,9 +172,9 @@
 //                             {/* Image Column */}
 //                             <div className="image-column col-lg-6 col-md-12 col-sm-12">
 //                                 <div className="inner-column">
-//                                     <div className="icon-layer-three" style={{ backgroundImage: 'url(assets/images/main-slider/icon-3.png)' }} ></div>
+//                                     {/* <div className="icon-layer-three" style={{ backgroundImage: 'url(assets/images/main-slider/icon-3.png)' }}></div> */}
 //                                     <div className="image">
-//                                         <img src="assets/images/main-slider/content-image-3.png" alt="" />
+//                                         <img src="assets/images/removed_banner_bg/sandwich.png" alt="" />
 //                                     </div>
 //                                 </div>
 //                             </div>
@@ -158,1163 +183,353 @@
 //                     </div>
 //                 </div>
 //                 </SwiperSlide>
+//                 {/* Slide 2 */}
+//                  {/* Slide 3 */}
+//                 <SwiperSlide>
+//                 <div className="slide style-three">
+//                     <div className="icon-layer-one " style={{ backgroundImage: 'url(assets/images/removed_banner_bg/chilly_removedbg.png)' }}></div>
+//                     <div className="icon-layer-two" style={{ backgroundImage: 'url(assets/images/removed_banner_bg/tomato_removed_bg.png)' }}></div>
+//                     <div className="auto-container">
+//                         <div className="row clearfix">
+                        
+//                             {/* Content Column */}
+//                             <div className="content-column col-lg-6 col-md-12 col-sm-12">
+//                                 <div className="inner-column">
+//                                     <h1 
+//                                         className="flex flex-wrap items-center font-bold tracking-tight leading-[1.1]"
+//                                         style={{ fontFamily: `${brandFont} !important` }}
+//                                     >
+                                        
+//                                     <span 
+//                                         className="first-letter text-5xl lg:text-6xl text-[#ffffff] mr-2"
+//                                         style={{ fontFamily: `${brandFont} !important` }}
+//                                     >
+//                                         Extremes are
+//                                     </span>
+
+//                                     <span 
+//                                         className="second-letter text-5xl lg:text-6xl text-[#ffffff] mr-2 font-bold"
+//                                         style={{ fontFamily: `${brandFont} !important` }}
+//                                     >
+//                                       the EASY,
+//                                     </span>
+
+//                                     <span 
+//                                         className="second-letter text-5xl lg:text-6xl text-[#ffffff] font-normal"
+//                                         style={{ fontFamily: `${brandFont} !important` }}
+//                                     >
+//                                        Strive for BALANCE
+//                                     </span>
+//                                     </h1>
+//                                     <div 
+//                                         className="text mt-4 text-lg tracking-normal"
+//                                         style={{ fontFamily: `${brandFont} !important` }}
+//                                     >
+//                                         Consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+//                                     </div>
+//                                     <div className="btns-box mt-6">
+//                                         <Link href="menu" className="theme-btn btn-style-one clearfix"><span className="icon"></span>Buy Now</Link>
+//                                     </div>
+//                                     <div className="icons-box">
+//                                         <img src="assets/images/main-slider/icons.png" alt="" />
+//                                     </div>
+//                                 </div>
+//                             </div>
+                            
+//                             {/* Image Column */}
+//                             <div className="image-column col-lg-6 col-md-12 col-sm-12">
+//                                 <div className="inner-column">
+//                                     {/* <div className="icon-layer-three" style={{ backgroundImage: 'url(assets/images/main-slider/icon-3.png)' }}></div> */}
+//                                     <div className="image " style={{width:'490px',marginTop:'-15rem',height:'522px'}}>
+//                                         <img src="assets/images/removed_banner_bg/CheeseChilliCornWrap-Social2copy.png" alt="" />
+//                                     </div>
+//                                 </div>
+//                             </div>
+                            
+//                         </div>
+//                     </div>
+//                 </div>
+//                 </SwiperSlide>
+                
+
+               
 //             </Swiper>
 //         </section>
-//         {/* End Banner Section */}
 //         </>
 //     )
 // }
 
-// 'use client'
-// import Link from "next/link"
-// import { Autoplay, Navigation, Pagination } from "swiper/modules"
-// import { Swiper, SwiperSlide } from "swiper/react"
-
-// const swiperOptions = {
-//     modules: [Autoplay, Pagination, Navigation],
-//     slidesPerView: 1,
-//     spaceBetween: 0,
-//     // Autoplay configuration
-//     autoplay: {
-//         delay: 6000, // 4 seconds = 4000ms
-//         disableOnInteraction: false, // Keep autoplay running after user interaction
-//     },
-//     loop: true,
-
-//     // Navigation
-//     navigation: {
-//         nextEl: '.h1n',
-//         prevEl: '.h1p',
-//     },
-
-//     // Pagination
-//     pagination: {
-//         el: '.swiper-pagination',
-//         clickable: true,
-//     },
-// }
-
-// export default function Banner() {
-//     return (
-//         <>
-//         {/* Banner Section */}
-//         <section className="banner-section  ">
-//             <div className="pattern-layer" style={{ backgroundImage: 'url(assets/images/main-slider/pattern-1.png)' }} ></div>
-//             <Swiper {...swiperOptions} className="main-slider-carousel ">
-                
-//                 {/* Slide */}
-//                 <SwiperSlide>
-//                 <div className="slide ">
-//                     <div className="auto-container">
-//                         <div className="row clearfix">
-                        
-//                             {/* Content Column */}
-//                             <div className="content-column col-lg-6 col-md-12 col-sm-12 ">
-//                                 <div className="inner-column">
-//                                 <h1 className="flex flex-wrap items-center leading-tight">
-//                                 <span className="first-letter text-6xl text-[#582414] mr-2">
-//                                     You don’t have to
-//                                 </span>
-
-//                                 <span className="second-letter text-6xl text-[#582414] mr-2">
-//                                     Eat Less,
-//                                 </span>
-
-//                                 <span className="second-letter text-6xl text-[#582414]">
-//                                     You just need to Eat Right
-//                                 </span>
-//                                 </h1>
-//                                     <div className="text !text-amber-700">Consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</div>
-//                                     <div className="btns-box">
-//                                         <Link href="menu" className="theme-btn btn-style-one clearfix"><span className="icon"></span>Order Now</Link>
-//                                     </div>
-//                                     <div className="icons-box">
-//                                         <img src="assets/images/main-slider/icons.png" alt="" />
-//                                     </div>
-//                                 </div>
-//                             </div>
-                            
-//                             {/* Image Column */}
-//                             <div className="image-column col-lg-6 col-md-12 col-sm-12">
-//                                 <div className="inner-column">
-//                                     <div className="image">
-//                                         <img src="https://mcdindia.com/wp-content/uploads/2023/01/veg-surprise-burger-1.png" alt="" />
-//                                     </div>
-//                                 </div>
-//                             </div>
-                            
-//                         </div>
-//                     </div>
-//                 </div>
-//                 </SwiperSlide>
-
-//                 {/* Slide */}
-//                 <SwiperSlide>
-//                 <div className="slide">
-//                     {/* <div className="icon-layer-one" style={{ backgroundImage: 'url(assets/images/main-slider/icon-1.png)' }} ></div> */}
-//                     {/* <div className="icon-layer-two" style={{ backgroundImage: 'url(assets/images/main-slider/icon-6.png)' }} ></div> */}
-//                     <div className="auto-container">
-//                         <div className="row clearfix">
-                        
-//                             {/* Content Column */}
-//                             <div className="content-column col-lg-6 col-md-12 col-sm-12">
-//                                 <div className="inner-column">
-//                                     {/* Extremes are the EASY, Strive for BALANCE
-//                                     <h1><span className="first-letter">Heathly</span><span className="second-letter">Smoothie</span></h1> */}
-//                                      <h1 className="flex flex-wrap items-center leading-tight">
-//                                 <span className="first-letter text-6xl text-[#582414] mr-2">
-//                                     Extremes are the
-//                                 </span>
-
-//                                 <span className="second-letter text-6xl text-[#582414] mr-2">
-//                                     EASY, Strive 
-//                                 </span>
-
-//                                 <span className="second-letter text-6xl text-[#582414]">
-//                                    for BALANCE
-//                                 </span>
-//                                 </h1>
-                                    
-//                                     <div className="text">Consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</div>
-//                                     <div className="btns-box">
-//                                         <Link href="menu" className="theme-btn btn-style-one clearfix"><span className="icon"></span>Order Now</Link>
-//                                     </div>
-//                                     <div className="icons-box">
-//                                         <img src="assets/images/main-slider/icons.png" alt="" />
-//                                     </div>
-//                                 </div>
-//                             </div>
-                            
-//                             {/* Image Column */}
-//                             <div className="image-column col-lg-6 col-md-12 col-sm-12">
-//                                 <div className="inner-column">
-//                                     <div className="icon-layer-three" style={{ backgroundImage: 'url(assets/images/main-slider/icon-3.png)' }} ></div>
-//                                     <div className="image">
-//                                         <img src="https://mcdindia.com/wp-content/uploads/2023/01/veg-surprise-burger-1.png" alt="" />
-//                                     </div>
-//                                 </div>
-//                             </div>
-                            
-//                         </div>
-//                     </div>
-//                 </div>
-//                 </SwiperSlide>
-//                 {/* Slide */}
-//                 <SwiperSlide>
-//                 <div className="slide style-two">
-//                     <div className="icon-layer-one" style={{ backgroundImage: 'url(assets/images/main-slider/icon-1.png)' }} ></div>
-//                     <div className="icon-layer-two" style={{ backgroundImage: 'url(assets/images/main-slider/icon-7.png)' }} ></div>
-//                     <div className="auto-container">
-//                         <div className="row clearfix">
-                        
-//                             {/* Content Column */}
-//                             <div className="content-column col-lg-6 col-md-12 col-sm-12">
-//                                 <div className="inner-column">
-//                                     {/* <h1><span className="first-letter">Heathly</span><span className="second-letter">Smoothie</span></h1> */}
-//                                          <h1 className="flex flex-wrap items-center leading-tight">
-//                                 <span className="first-letter text-6xl text-[#582414] mr-2">
-//                                     You don’t have to cook
-//                                 </span>
-
-//                                 <span className="second-letter text-6xl text-[#582414] mr-2">
-//                                    Fancy or
-//                                 </span>
-
-//                                 <span className="second-letter text-6xl text-[#582414]">
-//                                     Complicated Masterpieces - 
-//                                 </span>
-//                                 </h1>
-//                                     <div className="text">Consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</div>
-//                                     <div className="btns-box">
-//                                         <Link href="menu" className="theme-btn btn-style-one clearfix"><span className="icon"></span>Order Now</Link>
-//                                     </div>
-//                                     <div className="icons-box">
-//                                         <img src="assets/images/main-slider/icons.png" alt="" />
-//                                     </div>
-//                                 </div>
-//                             </div>
-                            
-//                             {/* Image Column */}
-//                             <div className="image-column col-lg-6 col-md-12 col-sm-12">
-//                                 <div className="inner-column">
-//                                     <div className="icon-layer-three" style={{ backgroundImage: 'url(assets/images/main-slider/icon-3.png)' }} ></div>
-//                                     <div className="image">
-//                                         <img src="https://mcdindia.com/wp-content/uploads/2023/01/veg-surprise-burger-1.png" alt="" />
-//                                     </div>
-//                                 </div>
-//                             </div>
-                            
-//                         </div>
-//                     </div>
-//                 </div>
-//                 </SwiperSlide>
-//             </Swiper>
-//         </section>
-//         {/* End Banner Section */}
-//       </>
-//     )
-// }
-
-// "use client";
-// import Link from "next/link";
-// import { Autoplay, Navigation, Pagination } from "swiper/modules";
-// import { Swiper, SwiperSlide } from "swiper/react";
-// import "../../layout/custom.css";
-
-
-// const swiperOptions = {
-//   modules: [Autoplay, Pagination, Navigation],
-//   slidesPerView: 1,
-//   spaceBetween: 0,
-//   autoplay: {
-//     delay: 5000,
-//     disableOnInteraction: false,
-//   },
-//   loop: true,
-//   navigation: {
-//     nextEl: ".h1n",
-//     prevEl: ".h1p",
-//   },
-//   pagination: {
-//     el: ".swiper-pagination",
-//     clickable: true,
-//   },
-// };
-
-// // Define your font family - replace with actual font from the image
-// const brandFont = "--font-primary"; // Example font
-
-// export default function Banner() {
-//   return (
-//     <>
-//       <style jsx global>{`
-//         /* Force override font family for banner headings */
-//         .banner-section .main-slider-carousel .slide .inner-column h1,
-//         .banner-section .main-slider-carousel .slide .inner-column h1 span {
-//           font-family: ${brandFont} !important;
-//         }
-
-//         .banner-section .main-slider-carousel .slide .inner-column .text {
-//           font-family: ${brandFont} !important;
-//         }
-//       `}</style>
-
-//       {/* Banner Section */}
-//       <section className="banner-section">
-//         <div
-//           className="pattern-layer"
-//           style={{
-//             backgroundImage: "url(assets/images/main-slider/pattern-1.png)",
-//           }}
-//         ></div>
-//         <Swiper {...swiperOptions} className="main-slider-carousel">
-//           {/* Slide 1 */}
-//           <SwiperSlide>
-//             <div className="slide">
-//               <div className="auto-container">
-//                 <div className="row clearfix">
-//                   {/* Content Column */}
-//                   <div className="content-column col-lg-6 col-md-12 col-sm-12">
-//                     <div className="inner-column">
-//                       <h1
-//                         className="flex flex-wrap items-center font-bold tracking-tight leading-[1.1]"
-//                         style={{ fontFamily: `${brandFont} !important` }}
-//                       >
-//                         <span
-//                           className="first-letter text-5xl lg:text-6xl text-[#582414] mr-2"
-//                           style={{ fontFamily: `${brandFont} !important` }}
-//                         >
-//                           You don't have to
-//                         </span>
-
-//                         <span
-//                           className="second-letter text-5xl lg:text-6xl text-[#582414] mr-2 font-bold"
-//                           style={{ fontFamily: `${brandFont} !important` }}
-//                         >
-//                           Eat Less,
-//                         </span>
-
-//                         <span
-//                           className="second-letter text-5xl lg:text-6xl text-[#582414] font-normal"
-//                           style={{ fontFamily: `${brandFont} !important` }}
-//                         >
-//                           You just need to Eat Right
-//                         </span>
-//                       </h1>
-//                       <div
-//                         className="text !text-amber-700 mt-4 text-lg tracking-normal"
-//                         style={{ fontFamily: `${brandFont} !important` }}
-//                       >
-//                         Consectetur, adipisci velit, sed quia non numquam eius
-//                         modi tempora incidunt ut labore et dolore magnam aliquam
-//                         quaerat voluptatem.
-//                       </div>
-//                       <div className="btns-box mt-6">
-//                         <Link
-//                           href="menu"
-//                           className="theme-btn btn-style-one clearfix"
-//                         >
-//                           <span className="icon"></span>Order Now
-//                         </Link>
-//                       </div>
-//                       <div className="icons-box">
-//                         <img src="assets/images/main-slider/icons.png" alt="" />
-//                       </div>
-//                     </div>
-//                   </div>
-
-//                   {/* Image Column - MODIFIED SECTION */}
-
-//                   <div className="!image-column col-lg-6 col-md-12 col-sm-12">
-//                     <div className="!inner-column w-full max-w-[500px] mx-auto">
-//                       <div
-//                         className="
-//                                         image
-//                                         !w-[350px] !h-[350px]
-//                                         md:!w-[400px] md:!h-[400px]
-//                                         !rounded-full
-//                                         !overflow-hidden
-//                                         !p-0
-//                                         mx-auto
-//                                         flex items-center justify-center
-//                                         "
-//                       >
-//                         <img
-//                           src="assets/slider/smoothie_drink.png"
-//                           alt=""
-//                           className="
-//                                             !w-full !h-full
-//                                             !object-cover
-//                                             !rounded-full
-//                                             "
-//                         />
-//                       </div>
-//                     </div>
-//                   </div>
-//                 </div>
-//               </div>
-//             </div>
-//           </SwiperSlide>
-
-//           {/* Slide 2 */}
-//          <SwiperSlide>
-//             <div className="slide style-two !custom-link !custom-second-slider">
-//               <div className="auto-container">
-//                 <div className="row clearfix">
-//                   {/* Content Column */}
-//                   <div className="content-column col-lg-6 col-md-12 col-sm-12">
-//                     <div className="inner-column">
-//                       <h1
-//                         className="flex flex-wrap items-center font-bold tracking-tight leading-[1.1]"
-//                         style={{ fontFamily: `${brandFont} !important` }}
-//                       >
-//                         <span
-//                           className="first-letter text-5xl lg:text-6xl text-[#582414] mr-2"
-//                           style={{ fontFamily: `${brandFont} !important` }}
-//                         >
-//                           Extremes are the
-//                         </span>
-
-//                         <span
-//                           className="second-letter text-5xl lg:text-6xl text-[#582414] mr-2 font-bold"
-//                           style={{ fontFamily: `${brandFont} !important` }}
-//                         >
-//                    EASY, Strive
-//                         </span>
-
-//                         <span
-//                           className="second-letter text-5xl lg:text-6xl text-[#582414] font-normal"
-//                           style={{ fontFamily: `${brandFont} !important` }}
-//                         >
-//                         for BALANCE
-//                         </span>
-//                       </h1>
-//                       <div
-//                         className="text !text-amber-700 mt-4 text-lg tracking-normal"
-//                         style={{ fontFamily: `${brandFont} !important` }}
-//                       >
-//                         Consectetur, adipisci velit, sed quia non numquam eius
-//                         modi tempora incidunt ut labore et dolore magnam aliquam
-//                         quaerat voluptatem.
-//                       </div>
-//                       <div className="btns-box mt-6">
-//                         <Link
-//                           href="menu"
-//                           className="theme-btn btn-style-one clearfix"
-//                         >
-//                           <span className="icon"></span>Order Now
-//                         </Link>
-//                       </div>
-//                       <div className="icons-box">
-//                         <img src="assets/images/main-slider/icons.png" alt="" />
-//                       </div>
-//                     </div>
-//                   </div>
-
-//                   {/* Image Column - MODIFIED SECTION */}
-
-//                   <div className="!image-column col-lg-6 col-md-12 col-sm-12">
-//                     <div className="!inner-column w-full max-w-[500px] mx-auto">
-//                       <div
-//                         className="
-//                                         image
-//                                         !w-[350px] !h-[350px]
-//                                         md:!w-[400px] md:!h-[400px]
-//                                         !rounded-full
-//                                         !overflow-hidden
-//                                         !p-0
-//                                         mx-auto
-//                                         flex items-center justify-center
-//                                         "
-//                       >
-//                         <img
-//                           src="assets/categories/ArabianSalad.jpg"
-//                           alt=""
-//                           className="
-//                                             !w-full !h-full
-//                                             !object-cover
-//                                             !rounded-full
-//                                             "
-//                         />
-//                       </div>
-//                     </div>
-//                   </div>
-//                 </div>
-//               </div>
-//             </div>
-//           </SwiperSlide>
-//           {/* Slide 3 */}
-//              <SwiperSlide>
-//             <div className="slide">
-//               <div className="auto-container">
-//                 <div className="row clearfix">
-//                   {/* Content Column */}
-//                   <div className="content-column col-lg-6 col-md-12 col-sm-12">
-//                     <div className="inner-column">
-//                       <h1
-//                         className="flex flex-wrap items-center font-bold tracking-tight leading-[1.1]"
-//                         style={{ fontFamily: `${brandFont} !important` }}
-//                       >
-//                         <span
-//                           className="first-letter text-5xl lg:text-6xl text-[#582414] mr-2"
-//                           style={{ fontFamily: `${brandFont} !important` }}
-//                         >
-//                           You don't have to
-//                         </span>
-
-//                         <span
-//                           className="second-letter text-5xl lg:text-6xl text-[#582414] mr-2 font-bold"
-//                           style={{ fontFamily: `${brandFont} !important` }}
-//                         >
-//                           Eat Less,
-//                         </span>
-
-//                         <span
-//                           className="second-letter text-5xl lg:text-6xl text-[#582414] font-normal"
-//                           style={{ fontFamily: `${brandFont} !important` }}
-//                         >
-//                           You just need to Eat Right
-//                         </span>
-//                       </h1>
-//                       <div
-//                         className="text !text-amber-700 mt-4 text-lg tracking-normal"
-//                         style={{ fontFamily: `${brandFont} !important` }}
-//                       >
-//                         Consectetur, adipisci velit, sed quia non numquam eius
-//                         modi tempora incidunt ut labore et dolore magnam aliquam
-//                         quaerat voluptatem.
-//                       </div>
-//                       <div className="btns-box mt-6">
-//                         <Link
-//                           href="menu"
-//                           className="theme-btn btn-style-one clearfix"
-//                         >
-//                           <span className="icon"></span>Order Now
-//                         </Link>
-//                       </div>
-//                       <div className="icons-box">
-//                         <img src="assets/images/main-slider/icons.png" alt="" />
-//                       </div>
-//                     </div>
-//                   </div>
-
-//                   {/* Image Column - MODIFIED SECTION */}
-
-//                   <div className="!image-column col-lg-6 col-md-12 col-sm-12">
-//                     <div className="!inner-column w-full max-w-[500px] mx-auto">
-//                       <div
-//                         className="
-//                                         image
-//                                         !w-[350px] !h-[350px]
-//                                         md:!w-[400px] md:!h-[400px]
-//                                         !rounded-full
-//                                         !overflow-hidden
-//                                         !p-0
-//                                         mx-auto
-//                                         flex items-center justify-center
-//                                         "
-//                       >
-//                         <img
-//                           src="assets/categories/NutellaMarshmallow3.jpg"
-//                           alt=""
-//                           className="
-//                                             !w-full !h-full
-//                                             !object-cover
-//                                             !rounded-full
-//                                             "
-//                         />
-//                       </div>
-//                     </div>
-//                   </div>
-//                 </div>
-//               </div>
-//             </div>
-//           </SwiperSlide>
-
-//           {/* Slide 4 */}
-//              <SwiperSlide>
-//             <div className="slide">
-//               <div className="auto-container">
-//                 <div className="row clearfix">
-//                   {/* Content Column */}
-//                   <div className="content-column col-lg-6 col-md-12 col-sm-12">
-//                     <div className="inner-column">
-//                       <h1
-//                         className="flex flex-wrap items-center font-bold tracking-tight leading-[1.1]"
-//                         style={{ fontFamily: `${brandFont} !important` }}
-//                       >
-//                         <span
-//                           className="first-letter text-5xl lg:text-6xl text-[#582414] mr-2"
-//                           style={{ fontFamily: `${brandFont} !important` }}
-//                         >
-//                           You don't have to
-//                         </span>
-
-//                         <span
-//                           className="second-letter text-5xl lg:text-6xl text-[#582414] mr-2 font-bold"
-//                           style={{ fontFamily: `${brandFont} !important` }}
-//                         >
-//                           Eat Less,
-//                         </span>
-
-//                         <span
-//                           className="second-letter text-5xl lg:text-6xl text-[#582414] font-normal"
-//                           style={{ fontFamily: `${brandFont} !important` }}
-//                         >
-//                           You just need to Eat Right
-//                         </span>
-//                       </h1>
-//                       <div
-//                         className="text !text-amber-700 mt-4 text-lg tracking-normal"
-//                         style={{ fontFamily: `${brandFont} !important` }}
-//                       >
-//                         Consectetur, adipisci velit, sed quia non numquam eius
-//                         modi tempora incidunt ut labore et dolore magnam aliquam
-//                         quaerat voluptatem.
-//                       </div>
-//                       <div className="btns-box mt-6">
-//                         <Link
-//                           href="menu"
-//                           className="theme-btn btn-style-one clearfix"
-//                         >
-//                           <span className="icon"></span>Order Now
-//                         </Link>
-//                       </div>
-//                       <div className="icons-box">
-//                         <img src="assets/images/main-slider/icons.png" alt="" />
-//                       </div>
-//                     </div>
-//                   </div>
-
-//                   {/* Image Column - MODIFIED SECTION */}
-
-//                   <div className="!image-column col-lg-6 col-md-12 col-sm-12">
-//                     <div className="!inner-column w-full max-w-[500px] mx-auto">
-//                       <div
-//                         className="
-//                                         image
-//                                         !w-[350px] !h-[350px]
-//                                         md:!w-[400px] md:!h-[400px]
-//                                         !rounded-full
-//                                         !overflow-hidden
-//                                         !p-0
-//                                         mx-auto
-//                                         flex items-center justify-center
-//                                         "
-//                       >
-//                         <img
-//                           src="assets/slider/wrap.jpg"
-//                           alt=""
-//                           className="
-//                                             !w-full !h-full
-//                                             !object-cover
-//                                             !rounded-full
-//                                             "
-//                         />
-//                       </div>
-//                     </div>
-//                   </div>
-//                 </div>
-//               </div>
-//             </div>
-//           </SwiperSlide>
-//           {/* Slide 5 */}
-//              <SwiperSlide>
-//             <div className="slide">
-//               <div className="auto-container">
-//                 <div className="row clearfix">
-//                   {/* Content Column */}
-//                   <div className="content-column col-lg-6 col-md-12 col-sm-12">
-//                     <div className="inner-column">
-//                       <h1
-//                         className="flex flex-wrap items-center font-bold tracking-tight leading-[1.1]"
-//                         style={{ fontFamily: `${brandFont} !important` }}
-//                       >
-//                         <span
-//                           className="first-letter text-5xl lg:text-6xl text-[#582414] mr-2"
-//                           style={{ fontFamily: `${brandFont} !important` }}
-//                         >
-//                           You don't have to
-//                         </span>
-
-//                         <span
-//                           className="second-letter text-5xl lg:text-6xl text-[#582414] mr-2 font-bold"
-//                           style={{ fontFamily: `${brandFont} !important` }}
-//                         >
-//                           Eat Less,
-//                         </span>
-
-//                         <span
-//                           className="second-letter text-5xl lg:text-6xl text-[#582414] font-normal"
-//                           style={{ fontFamily: `${brandFont} !important` }}
-//                         >
-//                           You just need to Eat Right
-//                         </span>
-//                       </h1>
-//                       <div
-//                         className="text !text-amber-700 mt-4 text-lg tracking-normal"
-//                         style={{ fontFamily: `${brandFont} !important` }}
-//                       >
-//                         Consectetur, adipisci velit, sed quia non numquam eius
-//                         modi tempora incidunt ut labore et dolore magnam aliquam
-//                         quaerat voluptatem.
-//                       </div>
-//                       <div className="btns-box mt-6">
-//                         <Link
-//                           href="menu"
-//                           className="theme-btn btn-style-one clearfix"
-//                         >
-//                           <span className="icon"></span>Order Now
-//                         </Link>
-//                       </div>
-//                       <div className="icons-box">
-//                         <img src="assets/images/main-slider/icons.png" alt="" />
-//                       </div>
-//                     </div>
-//                   </div>
-
-//                   {/* Image Column - MODIFIED SECTION */}
-
-//                   <div className="!image-column col-lg-6 col-md-12 col-sm-12">
-//                     <div className="!inner-column w-full max-w-[500px] mx-auto">
-//                       <div
-//                         className="
-//                                         image
-//                                         !w-[350px] !h-[350px]
-//                                         md:!w-[400px] md:!h-[400px]
-//                                         !rounded-full
-//                                         !overflow-hidden
-//                                         !p-0
-//                                         mx-auto
-//                                         flex items-center justify-center
-//                                         "
-//                       >
-//                         <img
-//                           src="assets/categories/EspressoMochaHotChocolate.jpg"
-//                           alt=""
-//                           className="
-//                                             !w-full !h-full
-//                                             !object-cover
-//                                             !rounded-full
-//                                             "
-//                         />
-//                       </div>
-//                     </div>
-//                   </div>
-//                 </div>
-//               </div>
-//             </div>
-//           </SwiperSlide>
-//           {/* Slide 6 */}
-//              <SwiperSlide>
-//             <div className="slide style-six">
-//               <div className="auto-container">
-//                 <div className="row clearfix">
-//                   {/* Content Column */}
-//                   <div className="content-column col-lg-6 col-md-12 col-sm-12">
-//                     <div className="inner-column">
-//                       <h1
-//                         className="flex flex-wrap items-center font-bold tracking-tight leading-[1.1]"
-//                         style={{ fontFamily: `${brandFont} !important` }}
-//                       >
-//                         <span
-//                           className="first-letter text-5xl lg:text-6xl text-[#ffffff] mr-2"
-//                           style={{ fontFamily: `${brandFont} !important` }}
-//                         >
-//                           You don't have to
-//                         </span>
-
-//                         <span
-//                           className="second-letter text-5xl lg:text-6xl text-[#ffffff] mr-2 font-bold"
-//                           style={{ fontFamily: `${brandFont} !important` }}
-//                         >
-//                           Eat Less,
-//                         </span>
-
-//                         <span
-//                           className="second-letter text-5xl lg:text-6xl text-[#ffffff] font-normal"
-//                           style={{ fontFamily: `${brandFont} !important` }}
-//                         >
-//                           You just need to Eat Right
-//                         </span>
-//                       </h1>
-//                       <div
-//                         className="text !text-gray-50 mt-4 text-lg tracking-normal"
-//                         style={{ fontFamily: `${brandFont} !important` }}
-//                       >
-//                         Consectetur, adipisci velit, sed quia non numquam eius
-//                         modi tempora incidunt ut labore et dolore magnam aliquam
-//                         quaerat voluptatem.
-//                       </div>
-//                       <div className="btns-box mt-6">
-//                         <Link
-//                           href="menu"
-//                           className="theme-btn btn-style-one clearfix"
-//                         >
-//                           <span className="icon"></span>Order Now
-//                         </Link>
-//                       </div>
-//                       <div className="icons-box">
-//                         <img src="assets/images/main-slider/icons.png" alt="" />
-//                       </div>
-//                     </div>
-//                   </div>
-
-//                   {/* Image Column - MODIFIED SECTION */}
-
-//                   <div className="!image-column col-lg-6 col-md-12 col-sm-12">
-//                     <div className="!inner-column w-full max-w-[500px] mx-auto">
-//                       <div
-//                         className="
-//                                         image
-//                                         !w-[350px] !h-[350px]
-//                                         md:!w-[400px] md:!h-[400px]
-//                                         !rounded-full
-//                                         !overflow-hidden
-//                                         !p-0
-//                                         mx-auto
-//                                         flex items-center justify-center
-//                                         "
-//                       >
-//                         <img
-//                           src="assets/categories/ChocolateCake.jpg"
-//                           alt=""
-//                           className="
-//                                             !w-full !h-full
-//                                             !object-cover
-//                                             !rounded-full
-//                                             "
-//                         />
-//                       </div>
-//                     </div>
-//                   </div>
-//                 </div>
-//               </div>
-//             </div>
-//           </SwiperSlide>
-//         </Swiper>
-//       </section>
-//     </>
-//   );
-// }
-"use client";
-import Link from "next/link";
-import { Autoplay, Navigation, Pagination } from "swiper/modules";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { useState, useEffect } from "react"; // Add this import
-import "../../layout/custom.css";
-import "swiper/css"; // Make sure Swiper CSS is imported
+'use client';
+import Link from "next/link"
+import { Autoplay, Navigation, Pagination } from "swiper/modules"
+import { Swiper, SwiperSlide } from "swiper/react"
+import { useState } from "react" // Import useState
 
 const swiperOptions = {
-  modules: [Autoplay, Pagination, Navigation],
-  slidesPerView: 1,
-  spaceBetween: 0,
-  autoplay: {
-    delay: 5000,
-    disableOnInteraction: false,
-  },
-  loop: true,
-  navigation: {
-    nextEl: ".h1n",
-    prevEl: ".h1p",
-  },
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-};
-
-// Define slide themes - adjust index based on your actual slides
-const slideThemes = [
-  'light',  // Slide 1
-  'dark',   // Slide 2 (different background)
-  'light',  // Slide 3
-  'light',  // Slide 4
-  'light',  // Slide 5
-  'dark',   // Slide 6
-];
+    modules: [Autoplay, Pagination, Navigation],
+    slidesPerView: 1,
+    spaceBetween: 0,
+    autoplay: {
+        delay: 6000,
+        disableOnInteraction: false,
+    },
+    loop: true,
+    navigation: {
+        nextEl: '.h1n',
+        prevEl: '.h1p',
+    },
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+}
 
 // Define your font family
-const brandFont = "--font-primary";
+const brandFont = "Montserrat', sans-serif"
+
+// Define slide themes
+const slideThemes = {
+    0: 'light', // First slide (index 0) - light background theme
+    1: 'dark',  // Second slide (index 1) - dark background theme  
+    2: 'dark'   // Third slide (index 2) - dark background theme
+}
 
 export default function Banner() {
-  const [activeSlideIndex, setActiveSlideIndex] = useState(0);
-  const [linkColor, setLinkColor] = useState("rgb(70, 25, 25)"); // Default color
-
-  // Update link color when active slide changes
-  useEffect(() => {
-    const currentTheme = slideThemes[activeSlideIndex % slideThemes.length];
+    const [activeSlideTheme, setActiveSlideTheme] = useState('light')
     
-    if (currentTheme === 'dark') {
-      // Color for dark background slides
-      setLinkColor("rgb(255, 255, 255)"); // White for dark backgrounds
-    } else {
-      // Color for light background slides
-      setLinkColor("rgb(70, 25, 25)"); // Original color
+    // Handle slide change
+    const handleSlideChange = (swiper) => {
+        const realIndex = swiper.realIndex // Get the actual slide index (accounts for loop)
+        const theme = slideThemes[realIndex] || 'light'
+        setActiveSlideTheme(theme)
     }
-  }, [activeSlideIndex]);
 
-  const handleSlideChange = (swiper) => {
-    setActiveSlideIndex(swiper.realIndex); // Use realIndex for loop mode
-  };
-
-  return (
-    <>
-      <style jsx global>{`
-        /* Force override font family for banner headings */
-        .banner-section .main-slider-carousel .slide .inner-column h1,
-        .banner-section .main-slider-carousel .slide .inner-column h1 span {
-          font-family: ${brandFont} !important;
-        }
-
-        .banner-section .main-slider-carousel .slide .inner-column .text {
-          font-family: ${brandFont} !important;
-        }
-
-        /* Dynamically update custom-link color based on active slide */
-        .custom-link {
-          font-family: var(--font-primary) !important;
-          font-weight: 600 !important;
-          color: ${linkColor} !important;
-          transition: color 0.3s ease; /* Smooth transition */
-        }
-
-        /* You can also target specific elements within the active slide */
-        .swiper-slide-active .custom-link {
-          color: ${linkColor} !important;
-        }
-
-        /* Additional styles for different slide backgrounds */
-        .slide.style-two {
-          /* Your dark background styles for slide 2 */
-          background: /* your dark background color or image */;
-        }
-
-        .slide.style-six {
-          /* Your dark background styles for slide 6 */
-          background: /* your dark background color or image */;
-        }
-      `}</style>
-
-      {/* Banner Section */}
-      <section className="banner-section">
-        <div
-          className="pattern-layer"
-          style={{
-            backgroundImage: "url(assets/images/main-slider/pattern-1.png)",
-          }}
-        ></div>
+    return (
+        <>
+        <style jsx global>{`
+            /* Force override font family for banner headings */
+            .banner-section .main-slider-carousel .slide .inner-column h1,
+            .banner-section .main-slider-carousel .slide .inner-column h1 span {
+                font-family: ${brandFont} !important;
+            }
+            
+            .banner-section .main-slider-carousel .slide .inner-column .text {
+                font-family: ${brandFont} !important;
+            }
+            
+            /* Dynamic custom-link color based on active slide */
+            .custom-link {
+                font-family: var(--font-primary) !important;
+                font-weight: 600 !important;
+                color: ${activeSlideTheme === 'dark' ? '#ffffff' : 'rgb(70, 25, 25)'} !important;
+                transition: color 0.3s ease;
+            }
+        `}</style>
         
-        <Swiper 
-          {...swiperOptions} 
-          className="main-slider-carousel"
-          onSlideChange={handleSlideChange}
-          onInit={(swiper) => handleSlideChange(swiper)} // Initialize on mount
-        >
-          {/* Slide 1 */}
-          <SwiperSlide>
-            <div className="slide">
-              <div className="auto-container">
-                <div className="row clearfix">
-                  {/* Content Column */}
-                  <div className="content-column col-lg-6 col-md-12 col-sm-12">
-                    <div className="inner-column">
-                      <h1
-                        className="flex flex-wrap items-center font-bold tracking-tight leading-[1.1]"
-                        style={{ fontFamily: `${brandFont} !important` }}
-                      >
-                        <span
-                          className="first-letter text-5xl lg:text-6xl text-[#582414] mr-2"
-                          style={{ fontFamily: `${brandFont} !important` }}
-                        >
-                          You don't have to
-                        </span>
-
-                        <span
-                          className="second-letter text-5xl lg:text-6xl text-[#582414] mr-2 font-bold"
-                          style={{ fontFamily: `${brandFont} !important` }}
-                        >
-                          Eat Less,
-                        </span>
-
-                        <span
-                          className="second-letter text-5xl lg:text-6xl text-[#582414] font-normal"
-                          style={{ fontFamily: `${brandFont} !important` }}
-                        >
-                          You just need to Eat Right
-                        </span>
-                      </h1>
-                      <div
-                        className="text !text-amber-700 mt-4 text-lg tracking-normal"
-                        style={{ fontFamily: `${brandFont} !important` }}
-                      >
-                        Consectetur, adipisci velit, sed quia non numquam eius
-                        modi tempora incidunt ut labore et dolore magnam aliquam
-                        quaerat voluptatem.
-                      </div>
-                      <div className="btns-box mt-6">
-                        <Link
-                          href="menu"
-                          className="theme-btn btn-style-one clearfix custom-link" // Add custom-link class here
-                        >
-                          <span className="icon"></span>Order Now
-                        </Link>
-                      </div>
-                      <div className="icons-box">
-                        <img src="assets/images/main-slider/icons.png" alt="" />
-                      </div>
+        {/* Banner Section */}
+        <section className="banner-section">
+            <div className="pattern-layer" style={{ backgroundImage: 'url(assets/images/main-slider/pattern-1.png)' }}></div>
+            <Swiper 
+                {...swiperOptions} 
+                className="main-slider-carousel"
+                onSlideChange={handleSlideChange}
+                onInit={handleSlideChange}
+            >
+                
+                {/* Slide 1 - Light theme */}
+                <SwiperSlide>
+                <div className="slide">
+                    <div className="icon-layer-one " style={{ backgroundImage: 'url(assets/images/removed_banner_bg/mulbberiesremovedbg.png)' }}></div>
+                    <div className="icon-layer-two" style={{ backgroundImage: 'url(assets/images/removed_banner_bg/cherryremovedbg.png)' }}></div>
+                    <div className="auto-container">
+                        <div className="row clearfix">
+                        
+                            {/* Content Column */}
+                            <div className="content-column col-lg-6 col-md-12 col-sm-12">
+                                <div className="inner-column">
+                                    <h1 
+                                        className="flex flex-wrap items-center font-bold tracking-tight leading-[1.1]"
+                                        style={{ fontFamily: `${brandFont} !important` }}
+                                    >
+                                    <span 
+                                        className="first-letter text-5xl lg:text-6xl text-[#582414] mr-2"
+                                        style={{ fontFamily: `${brandFont} !important` }}
+                                    >
+                                       People who love
+                                    </span>
+                                    <span 
+                                        className="second-letter text-5xl lg:text-6xl text-[#582414] mr-2 font-bold"
+                                        style={{ fontFamily: `${brandFont} !important` }}
+                                    >
+                                       to eat are always
+                                    </span>
+                                    <span 
+                                        className="second-letter text-5xl lg:text-6xl text-[#582414] font-normal"
+                                        style={{ fontFamily: `${brandFont} !important` }}
+                                    >
+                                       the best people
+                                    </span>
+                                    </h1>
+                                    <div 
+                                        className="text mt-4 text-lg tracking-normal !text-[#582414]"
+                                        style={{ fontFamily: `${brandFont} !important` }}
+                                    >
+                                        Consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+                                    </div>
+                                    <div className="btns-box mt-6">
+                                        <Link href="menu" className="theme-btn btn-style-one clearfix"><span className="icon"></span>Buy Now</Link>
+                                    </div>
+                                    {/* Example of using custom-link in this slide */}
+                                    <div className="icons-box mt-4">
+                                        <a href="#" className="custom-link">View More Recipes</a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            {/* Image Column */}
+                            <div className="image-column col-lg-6 col-md-12 col-sm-12">
+                                <div className="inner-column">
+                                    <div className="image" style={{width:'914px',marginTop:'-213px',marginLeft:'-9rem'}}>
+                                        <img src="assets/images/removed_banner_bg/beattheheatcopy.png" alt="" />
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
                     </div>
-                  </div>
-
-                  {/* Image Column */}
-                  <div className="!image-column col-lg-6 col-md-12 col-sm-12">
-                    <div className="!inner-column w-full max-w-[500px] mx-auto">
-                      <div
-                        className="
-                                        image
-                                        !w-[350px] !h-[350px]
-                                        md:!w-[400px] md:!h-[400px]
-                                        !rounded-full
-                                        !overflow-hidden
-                                        !p-0
-                                        mx-auto
-                                        flex items-center justify-center
-                                        "
-                      >
-                        <img
-                          src="assets/slider/smoothie_drink.png"
-                          alt=""
-                          className="
-                                            !w-full !h-full
-                                            !object-cover
-                                            !rounded-full
-                                            "
-                        />
-                      </div>
-                    </div>
-                  </div>
                 </div>
-              </div>
-            </div>
-          </SwiperSlide>
+                </SwiperSlide>
 
-          {/* Slide 2 - Dark Background */}
-          <SwiperSlide>
-            <div className="slide style-two">
-              <div className="auto-container">
-                <div className="row clearfix">
-                  {/* Content Column */}
-                  <div className="content-column col-lg-6 col-md-12 col-sm-12">
-                    <div className="inner-column">
-                      <h1
-                        className="flex flex-wrap items-center font-bold tracking-tight leading-[1.1]"
-                        style={{ fontFamily: `${brandFont} !important` }}
-                      >
-                        <span
-                          className="first-letter text-5xl lg:text-6xl text-[#ffffff] mr-2"
-                          style={{ fontFamily: `${brandFont} !important` }}
-                        >
-                          Extremes are the
-                        </span>
-
-                        <span
-                          className="second-letter text-5xl lg:text-6xl text-[#ffffff] mr-2 font-bold"
-                          style={{ fontFamily: `${brandFont} !important` }}
-                        >
-                          EASY, Strive
-                        </span>
-
-                        <span
-                          className="second-letter text-5xl lg:text-6xl text-[#ffffff] font-normal"
-                          style={{ fontFamily: `${brandFont} !important` }}
-                        >
-                          for BALANCE
-                        </span>
-                      </h1>
-                      <div
-                        className="text !text-gray-300 mt-4 text-lg tracking-normal"
-                        style={{ fontFamily: `${brandFont} !important` }}
-                      >
-                        Consectetur, adipisci velit, sed quia non numquam eius
-                        modi tempora incidunt ut labore et dolore magnam aliquam
-                        quaerat voluptatem.
-                      </div>
-                      <div className="btns-box mt-6">
-                        <Link
-                          href="menu"
-                          className="theme-btn btn-style-one clearfix custom-link" // Add custom-link class here
-                        >
-                          <span className="icon"></span>Order Now
-                        </Link>
-                      </div>
-                      <div className="icons-box">
-                        <img src="assets/images/main-slider/icons.png" alt="" />
-                      </div>
+                {/* Slide 2 - Dark theme */}
+                <SwiperSlide>
+                <div className="slide style-two">
+                    <div className="icon-layer-one " style={{ backgroundImage: 'url(assets/images/removed_banner_bg/onion_removedbg.png)' }}></div>
+                    <div className="icon-layer-two" style={{ backgroundImage: 'url(assets/images/removed_banner_bg/cheeseremovedbg.png)' }}></div>
+                    <div className="auto-container">
+                        <div className="row clearfix">
+                        
+                            {/* Content Column */}
+                            <div className="content-column col-lg-6 col-md-12 col-sm-12">
+                                <div className="inner-column">
+                                    <h1 
+                                        className="flex flex-wrap items-center font-bold tracking-tight leading-[1.1]"
+                                        style={{ fontFamily: `${brandFont} !important` }}
+                                    >
+                                    <span 
+                                        className="first-letter text-5xl lg:text-6xl text-[#ffffff] mr-2"
+                                        style={{ fontFamily: `${brandFont} !important` }}
+                                    >
+                                        Extremes are
+                                    </span>
+                                    <span 
+                                        className="second-letter text-5xl lg:text-6xl text-[#ffffff] mr-2 font-bold"
+                                        style={{ fontFamily: `${brandFont} !important` }}
+                                    >
+                                      the EASY,
+                                    </span>
+                                    <span 
+                                        className="second-letter text-5xl lg:text-6xl text-[#ffffff] font-normal"
+                                        style={{ fontFamily: `${brandFont} !important` }}
+                                    >
+                                       Strive for BALANCE
+                                    </span>
+                                    </h1>
+                                    <div 
+                                        className="text mt-4 text-lg tracking-normal"
+                                        style={{ fontFamily: `${brandFont} !important` }}
+                                    >
+                                        Consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+                                    </div>
+                                    <div className="btns-box mt-6">
+                                        <Link href="menu" className="theme-btn btn-style-one clearfix"><span className="icon"></span>Buy Now</Link>
+                                    </div>
+                                    {/* Example of using custom-link in this slide */}
+                                    <div className="icons-box mt-4">
+                                        <a href="#" className="custom-link">Explore Our Menu</a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            {/* Image Column */}
+                            <div className="image-column col-lg-6 col-md-12 col-sm-12">
+                                <div className="inner-column">
+                                    <div className="image">
+                                        <img  src="assets/images/removed_banner_bg/sandwich.png" alt="" />
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
                     </div>
-                  </div>
-
-                  {/* Image Column */}
-                  <div className="!image-column col-lg-6 col-md-12 col-sm-12">
-                    <div className="!inner-column w-full max-w-[500px] mx-auto">
-                      <div
-                        className="
-                                        image
-                                        !w-[350px] !h-[350px]
-                                        md:!w-[400px] md:!h-[400px]
-                                        !rounded-full
-                                        !overflow-hidden
-                                        !p-0
-                                        mx-auto
-                                        flex items-center justify-center
-                                        "
-                      >
-                        <img
-                          src="assets/categories/ArabianSalad.jpg"
-                          alt=""
-                          className="
-                                            !w-full !h-full
-                                            !object-cover
-                                            !rounded-full
-                                            "
-                        />
-                      </div>
-                    </div>
-                  </div>
                 </div>
-              </div>
-            </div>
-          </SwiperSlide>
-
-          {/* Slide 3 - 6 (similar structure, add custom-link class to each Link) */}
-             <SwiperSlide>
-            <div className="slide style-two">
-              <div className="auto-container">
-                <div className="row clearfix">
-                  {/* Content Column */}
-                  <div className="content-column col-lg-6 col-md-12 col-sm-12">
-                    <div className="inner-column">
-                      <h1
-                        className="flex flex-wrap items-center font-bold tracking-tight leading-[1.1]"
-                        style={{ fontFamily: `${brandFont} !important` }}
-                      >
-                        <span
-                          className="first-letter text-5xl lg:text-6xl text-[#ffffff] mr-2"
-                          style={{ fontFamily: `${brandFont} !important` }}
-                        >
-                          Extremes are the
-                        </span>
-
-                        <span
-                          className="second-letter text-5xl lg:text-6xl text-[#ffffff] mr-2 font-bold"
-                          style={{ fontFamily: `${brandFont} !important` }}
-                        >
-                          EASY, Strive
-                        </span>
-
-                        <span
-                          className="second-letter text-5xl lg:text-6xl text-[#ffffff] font-normal"
-                          style={{ fontFamily: `${brandFont} !important` }}
-                        >
-                          for BALANCE
-                        </span>
-                      </h1>
-                      <div
-                        className="text !text-gray-300 mt-4 text-lg tracking-normal"
-                        style={{ fontFamily: `${brandFont} !important` }}
-                      >
-                        Consectetur, adipisci velit, sed quia non numquam eius
-                        modi tempora incidunt ut labore et dolore magnam aliquam
-                        quaerat voluptatem.
-                      </div>
-                      <div className="btns-box mt-6">
-                        <Link
-                          href="menu"
-                          className="theme-btn btn-style-one clearfix custom-link" // Add custom-link class here
-                        >
-                          <span className="icon"></span>Order Now
-                        </Link>
-                      </div>
-                      <div className="icons-box">
-                        <img src="assets/images/main-slider/icons.png" alt="" />
-                      </div>
+                </SwiperSlide>
+                
+                {/* Slide 3 - Dark theme */}
+                <SwiperSlide>
+                <div className="slide style-three">
+                    <div className="icon-layer-one " style={{ backgroundImage: 'url(assets/images/removed_banner_bg/chilly_removedbg.png)' }}></div>
+                    <div className="icon-layer-two" style={{ backgroundImage: 'url(assets/images/removed_banner_bg/tomato_removed_bg.png)' }}></div>
+                    <div className="auto-container">
+                        <div className="row clearfix">
+                        
+                            {/* Content Column */}
+                            <div className="content-column col-lg-6 col-md-12 col-sm-12">
+                                <div className="inner-column">
+                                    <h1 
+                                        className="flex flex-wrap items-center font-bold tracking-tight leading-[1.1]"
+                                        style={{ fontFamily: `${brandFont} !important` }}
+                                    >
+                                    <span 
+                                        className="first-letter text-5xl lg:text-6xl text-[#ffffff] mr-2"
+                                        style={{ fontFamily: `${brandFont} !important` }}
+                                    >
+                                        Extremes are
+                                    </span>
+                                    <span 
+                                        className="second-letter text-5xl lg:text-6xl text-[#ffffff] mr-2 font-bold"
+                                        style={{ fontFamily: `${brandFont} !important` }}
+                                    >
+                                      the EASY,
+                                    </span>
+                                    <span 
+                                        className="second-letter text-5xl lg:text-6xl text-[#ffffff] font-normal"
+                                        style={{ fontFamily: `${brandFont} !important` }}
+                                    >
+                                       Strive for BALANCE
+                                    </span>
+                                    </h1>
+                                    <div 
+                                        className="text mt-4 text-lg tracking-normal"
+                                        style={{ fontFamily: `${brandFont} !important` }}
+                                    >
+                                        Consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+                                    </div>
+                                    <div className="btns-box mt-6">
+                                        <Link href="menu" className="theme-btn btn-style-one clearfix"><span className="icon"></span>Buy Now</Link>
+                                    </div>
+                                    {/* Example of using custom-link in this slide */}
+                                    <div className="icons-box mt-4">
+                                        <a href="#" className="custom-link">Special Offers</a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            {/* Image Column */}
+                            <div className="image-column col-lg-6 col-md-12 col-sm-12">
+                                <div className="inner-column">
+                                    <div className="image " style={{width:'490px',marginTop:'-15rem',height:'522px',marginBottom:'200px'}}>
+                                        <img src="assets/images/removed_banner_bg/CheeseChilliCornWrap-Social2copy.png" alt="" />
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
                     </div>
-                  </div>
-
-                  {/* Image Column */}
-                  <div className="!image-column col-lg-6 col-md-12 col-sm-12">
-                    <div className="!inner-column w-full max-w-[500px] mx-auto">
-                      <div
-                        className="
-                                        image
-                                        !w-[350px] !h-[350px]
-                                        md:!w-[400px] md:!h-[400px]
-                                        !rounded-full
-                                        !overflow-hidden
-                                        !p-0
-                                        mx-auto
-                                        flex items-center justify-center
-                                        "
-                      >
-                        <img
-                          src="assets/categories/ArabianSalad.jpg"
-                          alt=""
-                          className="
-                                            !w-full !h-full
-                                            !object-cover
-                                            !rounded-full
-                                            "
-                        />
-                      </div>
-                    </div>
-                  </div>
                 </div>
-              </div>
-            </div>
-          </SwiperSlide>
-          {/* ... rest of your slides ... */}
-          {/* Make sure to add className="custom-link" to each Link element */}
-        </Swiper>
-      </section>
-    </>
-  );
+                </SwiperSlide>
+                
+            </Swiper>
+        </section>
+        </>
+    )
 }

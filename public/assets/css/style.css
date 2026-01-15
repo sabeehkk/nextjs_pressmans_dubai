@@ -255,7 +255,12 @@
 
 }
 .banner-section .slide.style-three{
-	background-color:#1ba524;
+	/* background-color:#0A3D2E; */
+	background: linear-gradient(180deg,
+	#1F6F55,
+	#0A3D2E,
+	#062E22
+)
 }
 .banner-section .slide.style-six{
 	background-color:#733d58;
@@ -270,13 +275,8 @@
 	opacity:0;
 	transform: translateX(300px);
     background-position: center bottom;
-    background-repeat: no-repeat;
-	background-size:cover;
-	transition: all 900ms ease;
-    -moz-transition: all 900ms ease;
-    -webkit-transition: all 900ms ease;
-    -ms-transition: all 900ms ease;
-    -o-transition: all 900ms ease;
+	@@ -284,7 +289,7 @@
+	transform: translateX(0px);
 }
 
 .banner-section .swiper-slide-active .icon-layer-one{
@@ -285,22 +285,19 @@
 }
 
 .banner-section .icon-layer-two{
-	position: absolute;
+    position: absolute;
     left: 50px;
     bottom: 100px;
     width: 300px;
     height: 285px;
-	opacity:0;
-	transform: translateX(-300px);
+
+    opacity: 1;                /* show it */
+    transform: translateX(0);  /* bring it into view */
+
     background-position: center bottom;
     background-repeat: no-repeat;
-	transition: all 900ms ease;
-    -moz-transition: all 900ms ease;
-    -webkit-transition: all 900ms ease;
-    -ms-transition: all 900ms ease;
-    -o-transition: all 900ms ease;
+    background-size: contain;  /* IMPORTANT for PNG */
 }
-
 .banner-section .swiper-slide-active .icon-layer-two{
 	opacity:1;
 	transform: translateX(0px);
@@ -2133,7 +2130,8 @@
 .main-footer{
 	position:relative;
 	padding-bottom:45px;
-	background-color: #050505;
+	/* background-color: #050505; */
+	background:url(../images/footer-bg.webp) no-repeat;
 }
 
 .main-footer .pattern-layer-one{
