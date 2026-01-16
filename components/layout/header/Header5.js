@@ -13,7 +13,7 @@ export default function Header5({ scroll, handlePopup, handleMobileMenu, handleS
                     <div className="auto-container clearfix">
                         
                         <div className="pull-left logo-box">
-                            <div className="logo"><Link href="/"><img src="assets/images/logo-2.png" alt="" title=""/></Link></div>
+                            <div className="logo" style={{width:'5rem'}}><Link href="/"><img src="assets/slider/newlogo.png" alt="" title=""/></Link></div>
                         </div>
                         
                         <div className="nav-outer clearfix">
@@ -53,7 +53,7 @@ export default function Header5({ scroll, handlePopup, handleMobileMenu, handleS
                 <div className="sticky-header">
                     <div className="auto-container clearfix">
                         <div className="logo pull-left">
-                            <Link href="/" title=""><img src="assets/images/logo-small.png" alt="" title="" /></Link>
+                            <Link href="/" title=""><img style={{width:'80px'}} src="assets/slider/newlogo.png" alt="" title="" /></Link>
                         </div>
                         <div className="pull-right">
                             <nav className="main-menu">

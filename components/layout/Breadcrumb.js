@@ -5,13 +5,13 @@ export default function Breadcrumb({ breadcrumbTitle }) {
         <>
 
         {/* Page Title */}
-        <section className="page-title" style={{ backgroundImage: 'url(assets/images/background/6.jpg)' }} >
+        <section className="page-title" style={{ backgroundImage: 'url(assets/slider/about-bg-gray.webp)' }} >
             <div className="pattern-layer" style={{ backgroundImage: 'url(assets/images/background/pattern-7.png)' }} ></div>
             <div className="auto-container">
-                <h2>{breadcrumbTitle}</h2>
-                <ul className="page-breadcrumb">
+                <h2 className="!text-black">{breadcrumbTitle}</h2>
+                <ul className="page-breadcrumb ">
                     <li><Link href="/">home</Link></li>
-                    <li>{breadcrumbTitle}</li>
+                    <li className="!text-black !text-5xl">{breadcrumbTitle}</li>
                 </ul>
             </div>
         </section>

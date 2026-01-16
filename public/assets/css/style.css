@@ -254,6 +254,10 @@
 	background-color:#a79bac;
 
 }
+.banner-section .slide.style-four{
+	background-color:#5E4237;
+
+}
 .banner-section .slide.style-three{
 	/* background-color:#0A3D2E; */
 	background: linear-gradient(180deg,
@@ -275,9 +279,23 @@
 	opacity:0;
 	transform: translateX(300px);
     background-position: center bottom;
-	@@ -284,7 +289,7 @@
+	/* @@ -284,7 +289,7 @@ */
 	transform: translateX(0px);
 }
+
+.banner-section .icon-layer-three{
+	position: absolute;
+    right: 10px;
+    top: 0px;
+    width: 312px;
+    height: 274px;
+	opacity:0;
+	transform: translateX(300px);
+    background-position: center bottom;
+	/* @@ -284,7 +289,7 @@ */
+	transform: translateX(0px);
+}
+
 
 .banner-section .swiper-slide-active .icon-layer-one{
 	opacity:1;
@@ -5465,7 +5483,7 @@
 
 ***/
 
-.milkshake-section{
+.milkshake-section {
 	position:relative;
 	overflow:hidden;
 	padding:100px 0px 0px;

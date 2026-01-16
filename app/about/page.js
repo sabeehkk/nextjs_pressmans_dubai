@@ -37,7 +37,7 @@ const swiperOptions = {
 
 
 export default function About() {
-   
+
     return (
         <>
         <Layout headerStyle={5} footerStyle={1} breadcrumbTitle="About Us">

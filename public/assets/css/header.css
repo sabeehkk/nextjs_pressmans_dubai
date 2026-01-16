@@ -131,6 +131,7 @@
 /* Main Menu */
 
 .main-menu{
+	margin-right: 2rem;
 	position:relative;
 	float:left;
 	-webkit-transition:all 300ms ease;

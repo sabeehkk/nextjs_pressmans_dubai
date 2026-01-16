@@ -32,10 +32,10 @@ export default function Header1({ scroll, handlePopup, handleMobileMenu, handleS
 					<div className="outer-box clearfix">
 						
 						{/* Search Btn */}
-						<div className="search-box-btn search-box-outer"><span className="icon fa fa-search" onClick={handlePopup}></span></div>
+						{/* <div className="search-box-btn search-box-outer"><span className="icon fa fa-search" onClick={handlePopup}></span></div> */}
 						
 						{/* Nav Btn */}
-						<div className="nav-btn navSidebar-button"><span className="icon flaticon-menu-2" onClick={handleSidebar}></span></div>
+						{/* <div className="nav-btn navSidebar-button"><span className="icon flaticon-menu-2" onClick={handleSidebar}></span></div> */}
 							
 					</div>
 				</div>
