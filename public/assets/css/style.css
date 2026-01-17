@@ -4928,8 +4928,10 @@
 
 .history-section-two .image-column .image{
 	position:relative;
-	border-radius:8px;
+	border-radius:28px;
 	overflow:hidden;
+	margin-top: 2rem;
+	/* padding-top: 2rem; */
 }
 
 .history-section-two .image-column .image img{
@@ -4940,7 +4942,7 @@
 
 .history-section-two .image-column .image-two{
 	position:absolute;
-	right:-50px;
+	right:-10px;
 	bottom:-160px;
 }
 
@@ -4952,7 +4954,7 @@
 .history-section-two .content-column .inner-column{
 	position:relative;
 	padding-left:20px;
-	padding-top:130px;
+	/* padding-top:130px; */
 }
 
 .history-section-two .content-column .sec-title{
@@ -4995,7 +4997,7 @@
 	position:relative;
 	width:100%;
 	display:block;
-	filter: grayscale(100%);
+	/* filter: grayscale(100%); */
 	-webkit-transition: all 500ms ease;
 	-moz-transition: all 500ms ease;
 	-ms-transition: all 500ms ease;
@@ -5008,7 +5010,7 @@
 }
 
 .staff-block .inner-box .image .overlay-box{
-	position:absolute;
+	/* position:absolute; */
 	left:0px;
 	bottom:-150px;
 	right:0px;

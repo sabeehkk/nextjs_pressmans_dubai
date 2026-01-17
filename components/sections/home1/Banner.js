@@ -149,7 +149,7 @@ export default function Banner() {
                 <SwiperSlide>
                 <div className="slide style-two">
                     <div className="icon-layer-one " style={{ backgroundImage: 'url(assets/images/removed_banner_bg/onion_removedbg.png)' }}></div>
-                    <div className="icon-layer-two" style={{ backgroundImage: 'url(assets/images/removed_banner_bg/cheeseremovedbg.png)' }}></div>
+                    <div className="icon-layer-two" style={{ backgroundImage: 'url(assets/images/removed_banner_bg/cheeseslicedtray.png)' }}></div>
                     <div className="auto-container">
                         <div className="row clearfix">
                         
