@@ -4,7 +4,7 @@ import Layout from "@/components/layout/Layout"
 import { Autoplay, Navigation, Pagination } from "swiper/modules"
 import { Swiper, SwiperSlide } from "swiper/react"
 import GallerySlider1 from '@/components/slider/GallerySlider1'
-
+import MediaCoverage from "@/components/modal/MediaCoverage"
 
 
 const swiperOptions = {
@@ -42,6 +42,7 @@ export default function About() {
         <>
         <Layout headerStyle={1} footerStyle={1} breadcrumbTitle="About Us" heading="Best Delivered Categories">
         {/* History Section */}
+        <MediaCoverage />
         <section className="history-section-two">
             <div className="auto-container">
                 <div className="row clearfix">
@@ -172,6 +173,205 @@ export default function About() {
             </div>
         </section>
         {/* End Staff Section */}
+        <section className="!w-full !min-h-screen !bg-background !py-16 !px-4 sm:!px-6 lg:!px-8">
+      <div className="!max-w-6xl !mx-auto">
+        {/* Header */}
+        <div className="!mb-12">
+          <p className="!text-[#582414] !flex m-auto justify-center  !text-vm-brown !text-sm !font-medium !mb-2 !tracking-wide">
+            Our Thought
+          </p>
+          <h2 className="!text-3xl !items-center justify-center !flex !m-auto !text-[#582414] sm:!text-4xl lg:!text-5xl !font-bold !text-vm-brown-dark !leading-tight">
+            Pressman's Vision & Mission
+          </h2>
+        </div>
+
+        {/* Cards Container */}
+        <div className="!grid !grid-cols-1 lg:!grid-cols-2 !gap-8 lg:!gap-12">
+          {/* Vision Card */}
+          <div className="!flex !flex-col sm:!flex-row !items-start !gap-6">
+            {/* Vision Icon */}
+            <div className="!flex-shrink-0 !w-24 !h-24 !border-2 !border-vm-brown !rounded-lg !flex !items-center !justify-center !relative">
+              {/* Target/Crosshair Icon */}
+              <svg
+                className="!w-16 !h-16"
+                viewBox="0 0 64 64"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                {/* Outer circle */}
+                <circle
+                  cx="32"
+                  cy="32"
+                  r="24"
+                  stroke="hsl(16, 45%, 30%)"
+                  strokeWidth="3"
+                  fill="none"
+                />
+                {/* Middle circle */}
+                <circle
+                  cx="32"
+                  cy="32"
+                  r="14"
+                  stroke="hsl(16, 45%, 30%)"
+                  strokeWidth="3"
+                  fill="none"
+                />
+                {/* Center dot - yellow */}
+                <circle cx="32" cy="32" r="6" fill="hsl(48, 85%, 55%)" />
+                {/* Crosshair lines */}
+                <line
+                  x1="32"
+                  y1="4"
+                  x2="32"
+                  y2="16"
+                  stroke="hsl(16, 45%, 30%)"
+                  strokeWidth="3"
+                />
+                <line
+                  x1="32"
+                  y1="48"
+                  x2="32"
+                  y2="60"
+                  stroke="hsl(16, 45%, 30%)"
+                  strokeWidth="3"
+                />
+                <line
+                  x1="4"
+                  y1="32"
+                  x2="16"
+                  y2="32"
+                  stroke="hsl(16, 45%, 30%)"
+                  strokeWidth="3"
+                />
+                <line
+                  x1="48"
+                  y1="32"
+                  x2="60"
+                  y2="32"
+                  stroke="hsl(16, 45%, 30%)"
+                  strokeWidth="3"
+                />
+              </svg>
+            </div>
+            {/* Vision Content */}
+            <div className="!flex-1">
+              <h3 className="!text-[#582414] !text-xl sm:!text-2xl !font-bold !text-vm-brown-dark !mb-3">
+                Vision
+              </h3>
+              <p className="!text-vm-brown !text-base !leading-relaxed">
+                Pressman's vision is to become a household name known for keeping the
+                originality and authenticity of true sandwich experience alive in the world.
+              </p>
+            </div>
+          </div>
+
+          {/* Mission Card */}
+          <div className="!flex !flex-col sm:!flex-row !items-start !gap-6">
+            {/* Mission Icon */}
+            <div className="!flex-shrink-0 !w-24 !h-24 !border-2 !border-vm-brown !rounded-lg !flex !items-center !justify-center !relative">
+              {/* Trophy Icon */}
+              <svg
+                className="!w-16 !h-16"
+                viewBox="0 0 64 64"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                {/* Outer circle */}
+                <circle
+                  cx="32"
+                  cy="32"
+                  r="24"
+                  stroke="hsl(16, 45%, 30%)"
+                  strokeWidth="3"
+                  fill="none"
+                />
+                {/* Trophy cup */}
+                <path
+                  d="M24 20H40V30C40 35.5 36.5 40 32 40C27.5 40 24 35.5 24 30V20Z"
+                  stroke="hsl(48, 85%, 55%)"
+                  strokeWidth="2.5"
+                  fill="none"
+                />
+                {/* Trophy handles */}
+                <path
+                  d="M24 22H20C18 22 16 24 16 26C16 28 18 30 20 30H24"
+                  stroke="hsl(48, 85%, 55%)"
+                  strokeWidth="2.5"
+                  fill="none"
+                />
+                <path
+                  d="M40 22H44C46 22 48 24 48 26C48 28 46 30 44 30H40"
+                  stroke="hsl(48, 85%, 55%)"
+                  strokeWidth="2.5"
+                  fill="none"
+                />
+                {/* Trophy base */}
+                <line
+                  x1="32"
+                  y1="40"
+                  x2="32"
+                  y2="46"
+                  stroke="hsl(48, 85%, 55%)"
+                  strokeWidth="2.5"
+                />
+                <line
+                  x1="26"
+                  y1="46"
+                  x2="38"
+                  y2="46"
+                  stroke="hsl(48, 85%, 55%)"
+                  strokeWidth="2.5"
+                />
+                {/* Crosshair lines */}
+                <line
+                  x1="32"
+                  y1="4"
+                  x2="32"
+                  y2="12"
+                  stroke="hsl(16, 45%, 30%)"
+                  strokeWidth="3"
+                />
+                <line
+                  x1="32"
+                  y1="52"
+                  x2="32"
+                  y2="60"
+                  stroke="hsl(16, 45%, 30%)"
+                  strokeWidth="3"
+                />
+                <line
+                  x1="4"
+                  y1="32"
+                  x2="12"
+                  y2="32"
+                  stroke="hsl(16, 45%, 30%)"
+                  strokeWidth="3"
+                />
+                <line
+                  x1="52"
+                  y1="32"
+                  x2="60"
+                  y2="32"
+                  stroke="hsl(16, 45%, 30%)"
+                  strokeWidth="3"
+                />
+              </svg>
+            </div>
+            {/* Mission Content */}
+            <div className="!flex-1">
+              <h3 className="!text-[#582414] !text-xl sm:!text-2xl !font-bold !text-vm-brown-dark !mb-3">
+                Mission
+              </h3>
+              <p className="!text-vm-brown !text-base !leading-relaxed">
+                Pressman's should be known as the best sandwich brand not only for its
+                food and service but also for its inter-person bonding with every
+                community it has its foot-print in.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
         
         {/* Gallery Section Two */}
         <section className="gallery-section-two">
