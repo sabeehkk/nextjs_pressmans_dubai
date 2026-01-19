@@ -208,7 +208,7 @@ const MediaCoverage = () => {
             </div>
 
             {/* Info */}
-            <div className="!p-6 !bg-white">
+            {/* <div className="!p-6 !bg-white">
               <h3 className="!text-2xl !font-bold !text-gray-900 !mb-2">
                 {selectedImage?.title}
               </h3>
@@ -216,7 +216,7 @@ const MediaCoverage = () => {
                 <span className="!w-2 !h-2 !bg-[#8B2323] !rounded-full" />
                 {selectedImage?.source}
               </p>
-            </div>
+            </div> */}
           </div>
         </div>
       )}

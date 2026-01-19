@@ -3,8 +3,6 @@ import "./globals.css"
 import "public/assets/css/style.css"
 import "public/assets/css/responsive.css"
 
-
-
 import 'swiper/css'
 import "swiper/css/navigation"
 import "swiper/css/pagination"
