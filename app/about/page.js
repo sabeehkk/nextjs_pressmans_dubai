@@ -16,21 +16,16 @@ const swiperOptions = {
     //     disableOnInteraction: false,
     // },
     loop: true,
-
     // Navigation
     navigation: {
         nextEl: '.srn',
         prevEl: '.srp',
     },
-
     // Pagination
     pagination: {
         el: '.swiper-pagination',
         clickable: true,
     },
-
-
-
 }
 
 

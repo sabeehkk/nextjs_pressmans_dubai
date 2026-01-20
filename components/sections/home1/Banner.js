@@ -388,7 +388,6 @@ const slideThemes = {
 
 export default function Banner() {
     const [activeSlideTheme, setActiveSlideTheme] = useState('light')
-    
     // Handle slide change
     const handleSlideChange = (swiper) => {
         const realIndex = swiper.realIndex // Get the actual slide index (accounts for loop)
