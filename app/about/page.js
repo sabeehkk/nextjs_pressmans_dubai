@@ -37,7 +37,6 @@ export default function About() {
         <>
         <Layout headerStyle={1} footerStyle={1} breadcrumbTitle="About Us" heading="Best Delivered Categories">
         {/* History Section */}
-        <MediaCoverage />
         <section className="history-section-two">
             <div className="auto-container">
                 <div className="row clearfix">
@@ -80,6 +79,45 @@ export default function About() {
                 </div>
             </div>
         </section>
+
+         <section className="history-section-three">
+            <div className="auto-container">
+                <div className="row clearfix">
+
+                  {/* Content Column */}
+                    <div className="content-column col-lg-5 col-md-12 col-sm-12">
+                        <div className="inner-column">
+                            {/* Sec Title */}
+                            <div className="sec-title">
+                                {/* <div className="title !text-[#582414]" >PRESSMAN’S TALE</div> */}
+                                {/* <h2>Founded in 1970 by <span className="!text-[rgb(245, 228, 0)]">Chairman Jay Martin</span></h2> */}
+                       
+                                <div className="text">Pressman’s is a dedication to this historic era of early 20th century when sandwiches were first introduced to America. Very soon it captured the diet penchant of the country and became the way of life for Americans… During that period in the midst of all the difficulties, people would have a reason to rejoice and forget the difficulties of life over a Sandwich… Simply stuffed with meat, cheese, fresh ingredients and wrapped in newspaper, the sandwich became a daily reason for people to interact with each other and detach themselves from their routine tensions of life… </div>
+                            </div>
+                            {/* <ul className="list-style-two">
+                                <li>Cras at mi luctus, tincidunt urna eu, posuere enim</li>
+                                <li>Vivamus elementum lorem vitae quam tincidunt</li>
+                                <li>Suspendisse accumsan eros eu erat condimentum</li>
+                            </ul> */}            
+                        </div>
+                    </div>
+
+                    {/* Image Column */}
+                    <div className="image-column col-lg-7 col-md-12 col-sm-12">
+                        <div className="inner-column">
+                            <div className="image ">
+                                <img src="assets/images/20th_century/20thcenturykids.jpg" alt="" />
+                            </div>
+                            {/* <div className="image-two">
+                                <img src="assets/images/20th_century/20thcenturykids.jpg" alt="" />
+                            </div> */}
+                        </div>
+                    </div>
+                  
+                </div>
+            </div>
+        </section>
+
         {/* End History Section */}
           {/* Staff Section */}
         <section className="staff-section" style={{ backgroundImage: 'url(assets/slider/about-bg-gray.webp)' }}>
@@ -367,6 +405,11 @@ export default function About() {
         </div>
       </div>
     </section>
+
+
+        {/* { media coverage section} */}
+            <MediaCoverage />
+
         
         {/* Gallery Section Two */}
         <section className="gallery-section-two">
