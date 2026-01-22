@@ -281,11 +281,16 @@
 }
 
 .banner-section .icon-layer-one{
-	position: absolute;
+	/* position: absolute;
     right: -89px;
     top: -49px;
     width: 319px;
-    height: 216px;
+    height: 216px; */
+	position: absolute;
+    right: -96px;
+    top: -92px;
+    width: 387px;
+    height: 336px;
     opacity: 0;
 	transform: translateX(300px);
     background-position: center bottom;

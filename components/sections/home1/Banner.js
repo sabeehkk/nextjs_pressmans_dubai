@@ -157,7 +157,7 @@ export default function Banner() {
                 <div className="icon-layer-one " style={{ backgroundImage: 'url(assets/images/removed_banner_bg/lettucefive.png)',backgroundRepeat: "no-repeat",
                 backgroundPosition: "center",
                 backgroundSize: "contain", }}></div>
-                    <div className="icon-layer-two" style={{ backgroundImage: 'url(assets/images/removed_banner_bg/greentwo.png)' }}></div>
+                    <div className="icon-layer-two" style={{ backgroundImage: 'url(assets/images/removed_banner_bg/cornimage.png)' }}></div>
                      <div className="auto-container">
                         <div className="row clearfix">  
                             {/* Content Column */}
@@ -274,7 +274,7 @@ export default function Banner() {
                             <div className="image-column col-lg-6 col-md-12 col-sm-12">
                                 <div className="inner-column">
                                     {/* <div className="icon-layer-three" style={{ backgroundImage: 'url(assets/images/main-slider/icon-3.png)' }}></div> */}
-                                    <div className="image " style={{width:'490px',marginTop:'-15rem',height:'522px'}}>
+                                    <div className="image " style={{width:'487px',marginTop:'-11rem',height:'522px'}}>
                                         <img src="assets/images/removed_banner_bg/CheeseChilliCornWrap-Social2copy.png" alt="" />
                                     </div>
                                 </div>
@@ -341,7 +341,7 @@ export default function Banner() {
                             {/* Image Column */}
                             <div className="image-column col-lg-6 col-md-12 col-sm-12">
                                 <div className="inner-column">
-                                    <div className="image" style={{width:'28rem',marginLeft:'8rem'}}>
+                                    <div className="image" style={{width:'26rem',marginLeft:'8rem'}}>
                                         <img  src="assets/images/removed_banner_bg/HotChocolatecopy.png" alt="" />
                                     </div>
                                 </div>
@@ -476,7 +476,7 @@ export default function Banner() {
                             {/* Image Column */}
                             <div className="image-column col-lg-6 col-md-12 col-sm-12">
                                 <div className="inner-column">
-                                    <div className="image" style={{width:'28rem',marginLeft:'8rem'}}>
+                                    <div className="image" style={{width:'35rem',marginLeft:'6rem'}}>
                                         <img  src="assets/images/removed_banner_bg/ArabianSalad2copy.png" alt="" />
                                     </div>
                                 </div>
@@ -547,7 +547,7 @@ export default function Banner() {
                             {/* Image Column */}
                             <div className="image-column col-lg-6 col-md-12 col-sm-12">
                                 <div className="inner-column">
-                                    <div className="image" style={{width:'24rem',marginLeft:'8rem'}}>
+                                    <div className="image" style={{width:'22rem',marginLeft:'8rem'}}>
                                         <img  src="assets/images/removed_banner_bg/ArabianCakeShakecopy.png" alt="" />
                                     </div>
                                 </div>
