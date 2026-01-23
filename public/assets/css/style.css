@@ -1255,6 +1255,7 @@
 .beverage-block .inner-box .image img{
 	position:relative;
 	width:100%;
+	
 	display:block;
 	transition:all 500ms ease;
 	-moz-transition:all 500ms ease;

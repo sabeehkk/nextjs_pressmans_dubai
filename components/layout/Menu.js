@@ -10,22 +10,22 @@ export default function Menu() {
             <ul className="navigation">
                 <li className="dropdown">
                     <Link  className="custom-link" href="/">Home </Link>
-                    <ul>
-                        <li><Link href="/">Home One</Link></li>
-                        <li><Link href="index-2">Home Two</Link></li>
+                    {/* <ul> */}
+                        {/* <li><Link href="/">Home One</Link></li> */}
+                        {/* <li><Link href="index-2">Home Two</Link></li>
                         <li><Link href="index-3">Home Three</Link></li>
-                        <li><Link href="index-4">Home Four</Link></li>
-                    </ul>
+                        <li><Link href="index-4">Home Four</Link></li> */}
+                    {/* </ul> */}
                 </li>
                 <li className="dropdown">
-                    <Link className="custom-link" href="#">About</Link>
-                    <ul>
+                    <Link className="custom-link" href="about">About</Link>
+                    {/* <ul>
                         <li><Link href="about">About</Link></li>
                         <li><Link href="team">Team</Link></li>
                         <li><Link href="restaurant">Restaurant</Link></li>
-                    </ul>
+                    </ul> */}
                 </li>
-                <li className="dropdown">
+                {/* <li className="dropdown">
                     <Link className="custom-link" href="#">Menu</Link>
                     <ul>
                         <li><Link href="menu">Menu</Link></li>
@@ -35,15 +35,15 @@ export default function Menu() {
                         <li><Link href="slushy">Slushy</Link></li>
                         
                     </ul>
-                </li>
-                <li className="dropdown">
+                </li> */}
+                {/* <li className="dropdown">
                     <Link className="custom-link" href="#">Gallery</Link>
                     <ul>
                         <li><Link href="gallery">Gallery</Link></li>
                         <li><Link href="gallery-2">Gallery 02</Link></li>                        
                     </ul>
-                </li>
-                <li className="dropdown">
+                </li> */}
+                {/* <li className="dropdown">
                     <Link className="custom-link" href="#">Blog</Link>
                     <ul>
                         <li><Link href="blog-classic">Blog Classic</Link></li>
@@ -51,7 +51,7 @@ export default function Menu() {
                         <li><Link href="blog-details">Blog Details</Link></li>
                         <li><Link href="/error">Not Found</Link></li>
                     </ul>
-                </li>
+                </li> */}
                 <li>
                     <Link className="custom-link" href="contact">Contact</Link>
                 </li>

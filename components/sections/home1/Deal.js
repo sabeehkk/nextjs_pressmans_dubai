@@ -3,7 +3,7 @@ export default function Deal() {
     return (
         <>
             {/* Deal Section */}
-            <section className="deal-section" style={{ backgroundImage: 'url(assets/slider/foood.jpg)' }} >
+            <section className="deal-section" style={{ backgroundImage: 'url(assets/categories/BombayMixSalad+Nicoise+TomatoSoup.jpg)' }} >
                 <div className="top-pattern-layer" style={{ backgroundImage: 'url(assets/images/background/pattern-1.png)' }} ></div>
                 <div className="bottom-pattern-layer" style={{ backgroundImage: 'url(assets/images/background/pattern-2.png)' }} ></div>
                 <div className="auto-container">

@@ -29,10 +29,10 @@ export default function Beverage() {
                         <div className="beverage-block col-xl-3 col-lg-4 col-md-6 col-sm-12">
                             <div className="inner-box">
                                 <div className="image">
-                                    <Link href="milkshake"><img src="assets/slider/beverages.webp" alt="" /></Link>
+                                    <Link href="/"><img src="assets/slider/beverages.webp" alt="" /></Link>
                                 </div>
                                 <div className="lower-content">
-                                    <h6><Link href="milkshake">Beverages</Link></h6>
+                                    <h6><Link href="/">Beverages</Link></h6>
                                     <div className="products">View All</div>
                                 </div>
                             </div>
@@ -42,10 +42,10 @@ export default function Beverage() {
                         <div className="beverage-block col-xl-3 col-lg-4 col-md-6 col-sm-12">
                             <div className="inner-box">
                                 <div className="image">
-                                    <Link href="milkshake"><img src="/assets/slider/Sandwich-Wraps-Combos.webp" alt="" /></Link>
+                                    <Link href="/"><img src="/assets/slider/Sandwich-Wraps-Combos.webp" alt="" /></Link>
                                 </div>
                                 <div className="lower-content">
-                                    <h6><Link href="milkshake">Sandwiches & Wraps</Link></h6>
+                                    <h6><Link href="/">Sandwiches & Wraps</Link></h6>
                                     <div className="products">View All</div>
                                 </div>
                             </div>
@@ -55,10 +55,10 @@ export default function Beverage() {
                         <div className="beverage-block col-xl-3 col-lg-4 col-md-6 col-sm-12">
                             <div className="inner-box">
                                 <div className="image">
-                                    <Link href="milkshake"><img src="/assets/slider/Freshly-Made-Salads.webp" alt="" /></Link>
+                                    <Link href="/"><img src="/assets/slider/Freshly-Made-Salads.webp" alt="" /></Link>
                                 </div>
                                 <div className="lower-content">
-                                    <h6><Link href="milkshake">Salads</Link></h6>
+                                    <h6><Link href="/">Salads</Link></h6>
                                     <div className="products">View All</div>
                                 </div>
                             </div>
@@ -68,10 +68,10 @@ export default function Beverage() {
                         <div className="beverage-block col-xl-3 col-lg-4 col-md-6 col-sm-12">
                             <div className="inner-box">
                                 <div className="image">
-                                    <Link href="milkshake"><img src="/assets/slider/Pressed-Platters.webp" alt="" /></Link>
+                                    <Link href="/"><img src="/assets/slider/Pressed-Platters.webp" alt="" /></Link>
                                 </div>
                                 <div className="lower-content">
-                                    <h6><Link href="milkshake">Platters</Link></h6>
+                                    <h6><Link href="/">Platters</Link></h6>
                                     <div className="products">View All</div>
                                 </div>
                             </div>
@@ -81,10 +81,10 @@ export default function Beverage() {
                         <div className="beverage-block col-xl-3 col-lg-4 col-md-6 col-sm-12">
                             <div className="inner-box">
                                 <div className="image">
-                                    <Link href="milkshake"><img src="/assets/slider/Party-Packs.webp" alt="" /></Link>
+                                    <Link href="/"><img src="/assets/slider/Party-Packs.webp" alt="" /></Link>
                                 </div>
                                 <div className="lower-content">
-                                    <h6><Link href="milkshake">Party Packs</Link></h6>
+                                    <h6><Link href="/">Party Packs</Link></h6>
                                     <div className="products">View All</div>
                                 </div>
                             </div>
@@ -94,10 +94,10 @@ export default function Beverage() {
                         <div className="beverage-block col-xl-3 col-lg-4 col-md-6 col-sm-12">
                             <div className="inner-box">
                                 <div className="image">
-                                    <Link href="milkshake"><img src="/assets/slider/side-orders.webp" alt="" /></Link>
+                                    <Link href="/"><img src="/assets/slider/side-orders.webp" alt="" /></Link>
                                 </div>
                                 <div className="lower-content">
-                                    <h6><Link href="milkshake">Side Orders</Link></h6>
+                                    <h6><Link href="/">Side Orders</Link></h6>
                                     <div className="products">View All</div>
                                 </div>
                             </div>
@@ -107,10 +107,10 @@ export default function Beverage() {
                         <div className="beverage-block col-xl-3 col-lg-4 col-md-6 col-sm-12">
                             <div className="inner-box">
                                 <div className="image">
-                                    <Link href="milkshake"><img src="assets/slider/Sandwich-Wraps-Combos.webp" alt="" /></Link>
+                                    <Link href="/"><img src="assets/slider/Sandwich-Wraps-Combos.webp" alt="" /></Link>
                                 </div>
                                 <div className="lower-content">
-                                    <h6><Link href="milkshake">Sandwich & Wraps Combos</Link></h6>
+                                    <h6><Link href="/">Sandwich & Wraps Combos</Link></h6>
                                     <div className="products">View All</div>
                                 </div>
                             </div>
@@ -120,10 +120,10 @@ export default function Beverage() {
                         <div className="beverage-block col-xl-3 col-lg-4 col-md-6 col-sm-12">
                             <div className="inner-box">
                                 <div className="image">
-                                    <Link href="milkshake"><img src="assets/slider/pressed-sandwich.webp" alt="" /></Link>
+                                    <Link href="/"><img src="assets/slider/pressed-sandwich.webp" alt="" /></Link>
                                 </div>
                                 <div className="lower-content">
-                                    <h6><Link href="milkshake">Pressed Sandwiches & Wraps</Link></h6>
+                                    <h6><Link href="/">Pressed Sandwiches & Wraps</Link></h6>
                                     <div className="products">View All</div>
                                 </div>
                             </div>
@@ -133,7 +133,7 @@ export default function Beverage() {
                     
                     {/* Button Box */}
                     <div className="button-box text-center">
-                        <Link href="menu" className="theme-btn btn-style-two clearfix"><span className="icon"></span>View All Products</Link>
+                        <Link href="/" className="theme-btn btn-style-two clearfix"><span className="icon"></span>View All Products</Link>
                     </div>
                     
                 </div>

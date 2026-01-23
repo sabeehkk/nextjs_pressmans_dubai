@@ -5,16 +5,16 @@ export default function Home() {
 
     return (
         <>
-    <Layout headerStyle={5} footerStyle={1} breadcrumbTitle="Contact">
+    <Layout headerStyle={1} footerStyle={1} breadcrumbTitle="Contact">
         {/* Contact Page Section */}
         <section className="contact-page-section">
             <div className="auto-container">
                 {/* Sec Title */}
                 <div className="sec-title centered">
-                    <div className="title">Get in touch</div>
-                    <h2>Hi <span className="theme_color">Say</span></h2>
+                    <div className="title !text-[#582414]">Get in touch</div>
+                    {/* <h2>Hi <span className="theme_color">Say</span></h2> */}
                     <div className="separate"></div>
-                    <div className="text">Us percipit urbanitas referrentur ea. Mei at numquam molestiae intellegam. Ansed dictas <br/> accumsan. Nam sint atqui voluptatibus an, pro ne malis semper perpetua. Nam sint <br/> atqui voluptatibus an, pro ne malis semper perpetua.</div>
+                    {/* <div className="text">Us percipit urbanitas referrentur ea. Mei at numquam molestiae intellegam. Ansed dictas <br/> accumsan. Nam sint atqui voluptatibus an, pro ne malis semper perpetua. Nam sint <br/> atqui voluptatibus an, pro ne malis semper perpetua.</div> */}
                 </div>
                 <div className="row clearfix">
                 
@@ -32,7 +32,7 @@ export default function Home() {
                                     <div className="row clearfix">
                                     
                                         <div className="form-group col-lg-12 col-md-12 col-sm-12">
-                                            <textarea name="message" placeholder="Your Comment"></textarea>
+                                            {/* <textarea name="message" placeholder="Your Comment"></textarea> */}
                                         </div>
                                     
                                         <div className="form-group col-lg-6 col-md-6 col-sm-12">
@@ -40,7 +40,16 @@ export default function Home() {
                                         </div>
                                         
                                         <div className="form-group col-lg-6 col-md-6 col-sm-12">
+                                            <input type="email" name="email" placeholder="Your mobile"/>
+                                        </div>
+                                        <div className="form-group col-lg-6 col-md-6 col-sm-12">
                                             <input type="email" name="email" placeholder="Your Email"/>
+                                        </div>
+                                        <div className="form-group col-lg-6 col-md-6 col-sm-12">
+                                            <input type="email" name="email" placeholder="Your Subject"/>
+                                        </div>
+                                        <div className="form-group col-lg-6 col-md-6 col-sm-12">
+                                            <input type="email" name="email" placeholder="Your Message"/>
                                         </div>
                                         
                                         <div className="form-group col-lg-12 col-md-12 col-sm-12">
@@ -60,8 +69,8 @@ export default function Home() {
                         <div className="inner-column">
                             <ul className="info-list">
                                 <li>
-                                    <strong>Berlin</strong>
-                                    52 Corso Magenta <br/>20123 Milano, Italy <br/> +123 -45678-900 <br/>yourspa@info.com
+                                    <strong>Bengaluru</strong>
+                                   Karnataka<br/> Bengaluru Koramangala<br/> +123 -45678-900 <br/>pressman@info.com
                                 </li>
                                 <li>
                                     <strong>Opening Hours</strong>
@@ -91,11 +100,11 @@ export default function Home() {
         {/* End Map Section */}
         
         {/* Gallery Section */}
-        <section className="gallery-section">
+        {/* <section className="gallery-section">
             <div className="outer-container">
                 <GallerySlider1/>
             </div>
-        </section>
+        </section> */}
         {/* End Gallery Section */}
         
 

@@ -10,7 +10,7 @@ const swiperOptions = {
     slidesPerView: 1,
     spaceBetween: 0,
     autoplay: {
-        delay: 160000,
+        delay: 43000,
         disableOnInteraction: false,
     },
     loop: true,
@@ -125,7 +125,7 @@ export default function Banner() {
                                         Consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
                                     </div>
                                     <div className="btns-box mt-6">
-                                        <Link href="menu" className="theme-btn btn-style-one clearfix"><span className="icon"></span>Buy Now</Link>
+                                        <Link href="/" className="theme-btn btn-style-one clearfix"><span className="icon"></span>Buy Now</Link>
                                     </div>
                                     <div className="icons-box">
                                         <img src="assets/images/main-slider/icons.png" alt="" />
@@ -194,7 +194,7 @@ export default function Banner() {
                                         Consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
                                     </div>
                                     <div className="btns-box mt-6">
-                                        <Link href="menu" className="theme-btn btn-style-one clearfix"><span className="icon"></span>Buy Now</Link>
+                                        <Link href="/" className="theme-btn btn-style-one clearfix"><span className="icon"></span>Buy Now</Link>
                                     </div>
                                     <div className="icons-box">
                                         <img src="assets/images/main-slider/icons.png" alt="" />
@@ -262,7 +262,7 @@ export default function Banner() {
                                         Consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
                                     </div>
                                     <div className="btns-box mt-6">
-                                        <Link href="menu" className="theme-btn btn-style-one clearfix"><span className="icon"></span>Buy Now</Link>
+                                        <Link href="/" className="theme-btn btn-style-one clearfix"><span className="icon"></span>Buy Now</Link>
                                     </div>
                                     <div className="icons-box">
                                         <img src="assets/images/main-slider/icons.png" alt="" />
@@ -329,7 +329,7 @@ export default function Banner() {
                                         Consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
                                     </div>
                                     <div className="btns-box mt-6">
-                                        <Link href="menu" className="theme-btn btn-style-one clearfix"><span className="icon"></span>Buy Now</Link>
+                                        <Link href="/" className="theme-btn btn-style-one clearfix"><span className="icon"></span>Buy Now</Link>
                                     </div>
                                     {/* Example of using custom-link in this slide */}
                                     <div className="icons-box mt-4">
@@ -395,7 +395,7 @@ export default function Banner() {
                                         Consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
                                     </div>
                                     <div className="btns-box mt-6">
-                                        <Link href="menu" className="theme-btn btn-style-one clearfix"><span className="icon"></span>Buy Now</Link>
+                                        <Link href="/" className="theme-btn btn-style-one clearfix"><span className="icon"></span>Buy Now</Link>
                                     </div>
                                     <div className="icons-box">
                                         <img src="assets/images/main-slider/icons.png" alt="" />
@@ -464,7 +464,7 @@ export default function Banner() {
                                         Consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
                                     </div>
                                     <div className="btns-box mt-6">
-                                        <Link href="menu" className="theme-btn btn-style-one clearfix"><span className="icon"></span>Buy Now</Link>
+                                        <Link href="/" className="theme-btn btn-style-one clearfix"><span className="icon"></span>Buy Now</Link>
                                     </div>
                                     {/* Example of using custom-link in this slide */}
                                     <div className="icons-box mt-4">
@@ -535,7 +535,7 @@ export default function Banner() {
                                         Consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
                                     </div>
                                     <div className="btns-box mt-6">
-                                        <Link href="menu" className="theme-btn btn-style-one clearfix"><span className="icon"></span>Buy Now</Link>
+                                        <Link href="/" className="theme-btn btn-style-one clearfix"><span className="icon"></span>Buy Now</Link>
                                     </div>
                                     {/* Example of using custom-link in this slide */}
                                     <div className="icons-box mt-4">

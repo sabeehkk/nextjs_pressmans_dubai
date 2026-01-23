@@ -206,7 +206,7 @@ export default function About() {
             </div>
         </section>
         {/* End Staff Section */}
-        <section className="!w-full !min-h-screen !bg-background !py-16 !px-4 sm:!px-6 lg:!px-8">
+        <section className="!w-full !min-h- !bg-background !py-16 !px-4 sm:!px-6 lg:!px-8">
       <div className="!max-w-6xl !mx-auto">
         {/* Header */}
         <div className="!mb-12">
@@ -412,11 +412,10 @@ export default function About() {
 
         
         {/* Gallery Section Two */}
-        <section className="gallery-section-two">
+        {/* <section className="gallery-section-two">
                 <div className="outer-container">
                     <div className="masonry-items-container row clearfix">
                     
-                        {/* Gallery Block Two */}
                         <div className="gallery-block-two masonry-item col-lg-3 col-md-6 col-sm-12">
                             <div className="inner-box">
                                 <div className="image-box">
@@ -429,7 +428,6 @@ export default function About() {
                             </div>
                         </div>
                         
-                        {/* Gallery Block Two */}
                         <div className="col-lg-3 col-md-6 col-sm-12">
                             <div className="row">
                                 <div className="gallery-block-two masonry-item col-lg-12 col-md-12 col-sm-12">
@@ -443,7 +441,6 @@ export default function About() {
                                         </div>
                                     </div>
                                 </div>
-                                {/* Gallery Block Two */}
                                 <div className="gallery-block-two masonry-item col-lg-12 col-md-12 col-sm-12">
                                     <div className="inner-box">
                                         <div className="image-box">
@@ -458,10 +455,8 @@ export default function About() {
                             </div>
                         </div>
 
-                        {/* Gallery Block Two */}
                         <div className="col-lg-6 col-md-12 col-sm-12">
                             <div className="row">
-                                {/* Gallery Block Two */}
                                 <div className="gallery-block-two masonry-item col-lg-6 col-md-6 col-sm-12">
                                     <div className="inner-box">
                                         <div className="image-box">
@@ -474,7 +469,6 @@ export default function About() {
                                     </div>
                                 </div>
                                 
-                                {/* Gallery Block Two */}
                                 <div className="gallery-block-two masonry-item col-lg-6 col-md-6 col-sm-12">
                                     <div className="inner-box">
                                         <div className="image-box">
@@ -487,7 +481,6 @@ export default function About() {
                                     </div>
                                 </div>
 
-                                {/* Gallery Block Two */}
                                 <div className="gallery-block-two masonry-item col-lg-12 col-md-12 col-sm-12">
                                     <div className="inner-box">
                                         <div className="image-box">
@@ -503,19 +496,18 @@ export default function About() {
                         </div>  
                     </div>
             </div>
-        </section>
+        </section> */}
         {/* End Gallery Section Two */}
         
       
         
         {/* Testimonial Section */}
-        <section className="testimonial-section">
+        {/* <section className="testimonial-section">
             <div className="icon-layer-one" style={{ backgroundImage: 'url(assets/images/icons/icon-1.png)' }} ></div>
             <div className="icon-layer-two" style={{ backgroundImage: 'url(assets/images/icons/icon-2.png)' }} ></div>
             <div className="icon-layer-three" style={{ backgroundImage: 'url(assets/images/icons/icon-3.png)' }} ></div>
             <div className="pattern-layer" style={{ backgroundImage: 'url(assets/images/background/pattern-4.png)' }} ></div>
             <div className="auto-container">
-                {/* Sec Title */}
                 <div className="sec-title centered">
                     <div className="title">Testimonial</div>
                     <h2>What People Say</h2>
@@ -524,7 +516,6 @@ export default function About() {
                 <div className="inner-container">
                     <Swiper {...swiperOptions} className="single-item-carousel ">
                     
-                        {/* Testimonial Block */}
                         <SwiperSlide>
                         <div className="testimonial-block">
                             <div className="inner-box">
@@ -537,7 +528,6 @@ export default function About() {
                         </div>
                         </SwiperSlide>
                         
-                        {/* Testimonial Block */}
                         <SwiperSlide>
                         <div className="testimonial-block">
                             <div className="inner-box">
@@ -550,7 +540,6 @@ export default function About() {
                         </div>
                         </SwiperSlide>
                         
-                        {/* Testimonial Block */}
                         <SwiperSlide>
                         <div className="testimonial-block">
                             <div className="inner-box">
@@ -566,15 +555,15 @@ export default function About() {
                     </Swiper>
                 </div>
             </div>
-        </section>
+        </section> */}
         {/* End Testimonial Section */}
         
         {/* Gallery Section */}
-        <section className="gallery-section">
+        {/* <section className="gallery-section">
             <div className="outer-container">
                 <GallerySlider1/>
             </div>
-        </section>
+        </section> */}
         {/* End Gallery Section */}
 
             </Layout>
