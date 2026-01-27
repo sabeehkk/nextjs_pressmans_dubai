@@ -29,8 +29,8 @@ const brandFont = "Montserrat', sans-serif"
 
 // Define slide themes
 const slideThemes = {
-    0: 'light', // First slide (index 0) - light background theme
-    1: 'dark',  // Second slide (index 1) - dark background theme  
+    0: 'dark', // First slide (index 0) - light background theme
+    1: 'light',  // Second slide (index 1) - dark background theme  
     2: 'dark',  // Third slide (index 2) - dark background theme
     3: 'dark',  // Fourth slide (index 3) - dark background theme
     4: 'dark' ,  // Fifth slide (index 4) - dark background theme
@@ -78,8 +78,71 @@ export default function Banner() {
                 onSlideChange={handleSlideChange}
                 onInit={handleSlideChange} >
                 {/* Slide 1 - Light theme */}
-              
-                {/* Slide 1 */}
+               <SwiperSlide>
+               <div className="slide style-two">
+                <div className="icon-layer-one " style={{ backgroundImage: 'url(assets/images/removed_banner_bg/lettucefive.png)',backgroundRepeat: "no-repeat",
+                backgroundPosition: "center",
+                backgroundSize: "contain", }}></div>
+                    <div className="icon-layer-two" style={{ backgroundImage: 'url(assets/images/removed_banner_bg/cornimage.png)' }}></div>
+                     <div className="auto-container">
+                        <div className="row clearfix">  
+                            {/* Content Column */}
+                            <div className="content-column col-lg-6 col-md-12 col-sm-12">
+                                <div className="inner-column">
+                                    <h1 
+                                        className="flex flex-wrap items-center font-bold tracking-tight leading-[1.1]"
+                                        style={{ fontFamily: `${brandFont} !important` }}
+                                    >
+                                        
+                                    <span 
+                                        className="first-letter text-5xl lg:text-6xl text-[#ffffff] mr-2"
+                                        style={{ fontFamily: `${brandFont} !important` }}
+     >
+                                        Extremes are
+                                    </span>
+                                    <span 
+                                        className="second-letter text-5xl lg:text-6xl text-[#ffffff] mr-2 font-bold"
+                                        style={{ fontFamily: `${brandFont} !important` }}
+                                    >
+                                      the EASY,
+                                    </span>
+                                    <span 
+                                        className="second-letter text-5xl lg:text-6xl text-[#ffffff] font-normal"
+                                        style={{ fontFamily: `${brandFont} !important` }}
+                                    >
+                                       Strive for BALANCE
+                                    </span>
+                                    </h1>
+                                    <div 
+                                        className="text mt-4 text-lg tracking-normal"
+                                        style={{ fontFamily: `${brandFont} !important` }}
+                                    >
+                                        Consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+                                    </div>
+                                    <div className="btns-box mt-6">
+                                        <Link href="/" className="theme-btn btn-style-one clearfix"><span className="icon"></span>Buy Now</Link>
+                                    </div>
+                                    <div className="icons-box">
+                                        <img src="assets/images/main-slider/icons.png" alt="" />
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            {/* Image Column */}
+                            <div className="image-column col-lg-6 col-md-12 col-sm-12">
+                                <div className="inner-column">
+                                    {/* <div className="icon-layer-three" style={{ backgroundImage: 'url(assets/images/main-slider/icon-3.png)' }}></div> */}
+                                    <div className="image">
+                                        <img src="assets/images/removed_banner_bg/sandwich.png" alt="" />
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                </SwiperSlide>
+                {/* Slide 2 */}
                 <SwiperSlide>
                 <div className="slide">
                     <div className="icon-layer-one " style={{ backgroundImage: 'url(assets/images/removed_banner_bg/mulbberiesremovedbg.png)',backgroundRepeat: "no-repeat",
@@ -152,14 +215,19 @@ export default function Banner() {
                  {/* Slide 3 */}
 
                  
-                <SwiperSlide>
-               <div className="slide style-two">
-                <div className="icon-layer-one " style={{ backgroundImage: 'url(assets/images/removed_banner_bg/lettucefive.png)',backgroundRepeat: "no-repeat",
+            <SwiperSlide>
+                <div className="slide style-seven">
+                <div className="icon-layer-one "  style={{ backgroundImage: "url(assets/images/removed_banner_bg/vanilatwo.png)",
+                backgroundRepeat: "no-repeat",
                 backgroundPosition: "center",
-                backgroundSize: "contain", }}></div>
-                    <div className="icon-layer-two" style={{ backgroundImage: 'url(assets/images/removed_banner_bg/cornimage.png)' }}></div>
-                     <div className="auto-container">
-                        <div className="row clearfix">  
+                backgroundSize: "contain",
+                // width: "100%",
+                // height: "100%", 
+                }}></div>
+                 <div className="icon-layer-two" style={{ backgroundImage: 'url(assets/images/removed_banner_bg/milk.png)' }}></div>
+                    <div className="auto-container">
+                        <div className="row clearfix">
+                        
                             {/* Content Column */}
                             <div className="content-column col-lg-6 col-md-12 col-sm-12">
                                 <div className="inner-column">
@@ -167,12 +235,12 @@ export default function Banner() {
                                         className="flex flex-wrap items-center font-bold tracking-tight leading-[1.1]"
                                         style={{ fontFamily: `${brandFont} !important` }}
                                     >
-                                        
                                     <span 
                                         className="first-letter text-5xl lg:text-6xl text-[#ffffff] mr-2"
                                         style={{ fontFamily: `${brandFont} !important` }}
-     >
-                                        Extremes are
+                                    >
+                                        Extremes are     
+                            
                                     </span>
                                     <span 
                                         className="second-letter text-5xl lg:text-6xl text-[#ffffff] mr-2 font-bold"
@@ -196,8 +264,9 @@ export default function Banner() {
                                     <div className="btns-box mt-6">
                                         <Link href="/" className="theme-btn btn-style-one clearfix"><span className="icon"></span>Buy Now</Link>
                                     </div>
-                                    <div className="icons-box">
-                                        <img src="assets/images/main-slider/icons.png" alt="" />
+                                    {/* Example of using custom-link in this slide */}
+                                    <div className="icons-box mt-4">
+                                        <a href="#" className="custom-link">Explore Our Menu</a>
                                     </div>
                                 </div>
                             </div>
@@ -205,17 +274,16 @@ export default function Banner() {
                             {/* Image Column */}
                             <div className="image-column col-lg-6 col-md-12 col-sm-12">
                                 <div className="inner-column">
-                                    {/* <div className="icon-layer-three" style={{ backgroundImage: 'url(assets/images/main-slider/icon-3.png)' }}></div> */}
-                                    <div className="image">
-                                        <img src="assets/images/removed_banner_bg/sandwich.png" alt="" />
+                                    <div className="image" style={{width:'22rem',marginLeft:'8rem'}}>
+                                        <img  src="assets/images/removed_banner_bg/ArabianCakeShakecopy.png" alt="" />
                                     </div>
                                 </div>
                             </div>
-                            
                         </div>
                     </div>
                 </div>
                 </SwiperSlide>
+               
                 {/* Slide 2 */}
                  {/* Slide 3 */}
                 <SwiperSlide>
@@ -288,7 +356,7 @@ export default function Banner() {
                 {/* Slide 2 - Dark theme */}
                 <SwiperSlide>
                 <div className="slide style-four">
-                <div className="icon-layer-three " style={{ backgroundImage: 'url(assets/images/removed_banner_bg/cofeee.png)',backgroundRepeat: "no-repeat",
+                <div className="icon-layer-one " style={{ backgroundImage: 'url(assets/images/removed_banner_bg/cofeee.png)',backgroundRepeat: "no-repeat",
                 backgroundPosition: "center",
                 backgroundSize: "contain", }}></div>
                  <div className="icon-layer-two" style={{ backgroundImage: 'url(assets/images/removed_banner_bg/cofeee.png)' }}></div>
@@ -417,6 +485,9 @@ export default function Banner() {
                     </div>
                 </div>
                 </SwiperSlide>
+
+     {/* {slide seven} */}
+
             <SwiperSlide>
                 <div className="slide style-four">
                 <div className="icon-layer-one "  style={{  backgroundImage: "url(assets/images/removed_banner_bg/lettucefive.png)",
@@ -486,76 +557,7 @@ export default function Banner() {
                 </div>
                 </SwiperSlide>
 
-     {/* {slide seven} */}
 
-            <SwiperSlide>
-                <div className="slide style-seven">
-                <div className="icon-layer-one "  style={{ backgroundImage: "url(assets/images/removed_banner_bg/vanilatwo.png)",
-                backgroundRepeat: "no-repeat",
-                backgroundPosition: "center",
-                backgroundSize: "contain",
-                // width: "100%",
-                // height: "100%", 
-                }}></div>
-                 <div className="icon-layer-two" style={{ backgroundImage: 'url(assets/images/removed_banner_bg/milk.png)' }}></div>
-                    <div className="auto-container">
-                        <div className="row clearfix">
-                        
-                            {/* Content Column */}
-                            <div className="content-column col-lg-6 col-md-12 col-sm-12">
-                                <div className="inner-column">
-                                    <h1 
-                                        className="flex flex-wrap items-center font-bold tracking-tight leading-[1.1]"
-                                        style={{ fontFamily: `${brandFont} !important` }}
-                                    >
-                                    <span 
-                                        className="first-letter text-5xl lg:text-6xl text-[#ffffff] mr-2"
-                                        style={{ fontFamily: `${brandFont} !important` }}
-                                    >
-                                        Extremes are     
-                            
-                                    </span>
-                                    <span 
-                                        className="second-letter text-5xl lg:text-6xl text-[#ffffff] mr-2 font-bold"
-                                        style={{ fontFamily: `${brandFont} !important` }}
-                                    >
-                                      the EASY,
-                                    </span>
-                                    <span 
-                                        className="second-letter text-5xl lg:text-6xl text-[#ffffff] font-normal"
-                                        style={{ fontFamily: `${brandFont} !important` }}
-                                    >
-                                       Strive for BALANCE
-                                    </span>
-                                    </h1>
-                                    <div 
-                                        className="text mt-4 text-lg tracking-normal"
-                                        style={{ fontFamily: `${brandFont} !important` }}
-                                    >
-                                        Consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
-                                    </div>
-                                    <div className="btns-box mt-6">
-                                        <Link href="/" className="theme-btn btn-style-one clearfix"><span className="icon"></span>Buy Now</Link>
-                                    </div>
-                                    {/* Example of using custom-link in this slide */}
-                                    <div className="icons-box mt-4">
-                                        <a href="#" className="custom-link">Explore Our Menu</a>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            {/* Image Column */}
-                            <div className="image-column col-lg-6 col-md-12 col-sm-12">
-                                <div className="inner-column">
-                                    <div className="image" style={{width:'22rem',marginLeft:'8rem'}}>
-                                        <img  src="assets/images/removed_banner_bg/ArabianCakeShakecopy.png" alt="" />
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                </SwiperSlide>
             </Swiper>
         </section>
         </>

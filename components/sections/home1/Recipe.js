@@ -140,7 +140,7 @@ export default function Recipe() {
             <section
                 className="recipe-section"
                 style={{
-                    backgroundImage: "url('https://pressmans.com/wp-content/uploads/2023/06/feedback-bg.jpg')",
+                    backgroundImage: "url('assets/slider/about-bg-gray.webp')",
                 }}
             >
                 {/* <div className="icon-layer-one" style={{ backgroundImage: 'url(assets/images/icons/icon-1.png)' }}></div> */}
@@ -150,12 +150,12 @@ export default function Recipe() {
                 <div className="auto-container">
                     {/* Sec Title */}
                     <div className="sec-title centered">
-                        <h1 className="title">Best for You</h1>
+                        <h1 className="title !text-[#582414]">Best for You</h1>
                         {/* <h2 className="text-white">Find us on your favorite food delivery apps and order ahead to skip the rush</h2> */}
                       <h2>
-                        <span style={{ color: "white" }}>Find us on your favorite </span>
+                        <span style={{ color: "#582414" }}>Find us on your favorite </span>
                         <span style={{ color: "#F5E400" }}>food delivery apps</span>
-                        <span style={{ color: "white" }}>
+                        <span style={{ color: "#582414" }}>
                             {" "}and order ahead to skip the 
                         </span>
                         <span style={{ color: "#F5E400" }}>

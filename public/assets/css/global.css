@@ -327,7 +327,7 @@ img{
 	overflow:hidden;
 	overflow: hidden;
 	border-radius: 50px;
-	background-color:#de9190;
+	background-color:#410a09;
 	padding:7px 35px 6px 7px;
 	text-transform: capitalize;
 	font-family: var(--poppins);
@@ -352,7 +352,7 @@ img{
 
 .btn-style-one:hover{
 	color: #ffffff;
-	background-color:#91ad41;
+	background-color:#F5E400;
 }
 
 /* Btn Style Two */
