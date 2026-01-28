@@ -248,7 +248,7 @@
 	background-color:#f6f1cc;
 	/* background:url(../slider/about-bg-gray.webp); */
 	/* assets/slider/about-bg-gray.webp */
-}
+  }
 
 .banner-section .slide.style-two{
 	background-color:#a79bac;
@@ -259,11 +259,23 @@
 }
 
 .banner-section .slide.style-four{
-	background-color:#5E4237;
+	/* background-color:#5E4237; */
+	background: linear-gradient(
+  180deg,
+  #5E4237,
+  #5E4237,
+  #c3a596
+);
 }
 
 .banner-section .slide.style-seven{
-	background-color:#897CA7;;
+	/* background-color:#897CA7; */
+	  background: linear-gradient(
+    180deg,
+    #897CA7,
+    #897CA7,
+    #d9d7d7
+  );
 }
 
 
@@ -271,11 +283,13 @@
 .banner-section .slide.style-three{
 	/* background-color:#0A3D2E; */
 	background: linear-gradient(180deg,
+	/* #062E22, */
 	#1F6F55,
-	#0A3D2E,
-	#062E22
+	#1F6F55,
+	#98c8b9
 )
 }
+
 .banner-section .slide.style-six{
 	background-color:#733d58;
 }

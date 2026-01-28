@@ -130,8 +130,8 @@
 
 /* Main Menu */
 
-.main-menu{
-	margin-right: 2rem;
+.main-menu {
+	margin-right: 6rem;
 	position:relative;
 	float:left;
 	-webkit-transition:all 300ms ease;
